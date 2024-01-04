@@ -98,7 +98,7 @@ const TopMenuComponent: React.FC = () => {
             <Flex justify='space-around' align='center' style={{ backgroundColor: '#000' }} >
                 <Button shape="round" style={{ backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ color: '#fff' }} /> <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'>Find us on Alibaba</Link></Button>
                 <div></div>
-                <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ minWidth: '330px', lineHeight: '40px', backgroundColor: '#000' }} theme='dark' />
+                <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ minWidth: 0, flex: "auto", maxWidth: '330px', lineHeight: '40px', backgroundColor: '#000' }} theme='dark' />
             </Flex>
 
             <div style={{ padding: '10px 0', backgroundColor: '#fff' }}>
@@ -108,7 +108,7 @@ const TopMenuComponent: React.FC = () => {
                         <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
-                        style={{ justifyContent: 'center', background: 'none', border: 'none', minWidth: 0, flex: "auto" }} />
+                        style={{ justifyContent: 'center', background: 'none', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
                     <Flex justify='space-evenly' gap="middle" align='center'>
 
 
