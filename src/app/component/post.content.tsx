@@ -37,7 +37,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                                             <Image
                                                 layout="fill"
                                                 objectFit="cover"
-                                                src={`http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.formats.large.url}`}
+                                                src={`http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.url}`}
                                                 alt={post.data.attributes.Title}
                                             />
                                         </div>

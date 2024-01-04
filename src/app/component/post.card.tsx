@@ -26,7 +26,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                             <Image
                                 layout="fill"
                                 objectFit="cover"
-                                src={`http://api.slmglobal.vn${post.attributes.Thumbail.data.attributes.formats.medium.url}`}
+                                src={`http://api.slmglobal.vn${post.attributes.Thumbail.data.attributes.url}`}
                                 alt={post.attributes.title}
                             />
                         </div>
