@@ -1,5 +1,5 @@
 'use client'
-import { CommentOutlined, CustomerServiceOutlined } from '@ant-design/icons';
+import { WhatsAppOutlined, PhoneOutlined, CustomerServiceOutlined } from '@ant-design/icons';
 import React from 'react';
 import { FloatButton } from 'antd';
 
@@ -12,8 +12,8 @@ const ChatBoxModule: React.FC = () => (
             style={{ right: 54 }}
             icon={<CustomerServiceOutlined />}
         >
-            <FloatButton />
-            <FloatButton icon={<CommentOutlined />} />
+            <FloatButton tooltip={<div>Customer service center</div>} href='tel:+84989040651' icon={<PhoneOutlined />} />
+            <FloatButton tooltip={<div>Chat with me via whatsapp</div>} href='https://wa.me/84989040651' icon={<WhatsAppOutlined />} />
         </FloatButton.Group>
     </>
 );
