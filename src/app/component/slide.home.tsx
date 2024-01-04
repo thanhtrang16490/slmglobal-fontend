@@ -16,7 +16,7 @@ const SlideHomeModule = () => {
                 <SlideModule backgroundImage='/img/header-5.jpg' headerTitle='Moulded_Extruded Rubber Products' id='rubber' />
                 <SlideModule backgroundImage='/img/header-6.jpg' headerTitle='Plastic Pipe Products' id='wood' />
                 <SlideModule backgroundImage='/img/header-7.jpg' headerTitle='Plywood Products' id='pipes' />
-                <SlideModule backgroundImage='/img/header-8.jpg' headerTitle='Palm Leaf' id='palm-leaf' />
+                <SlideModule backgroundImage='/img/header-8.jpg' headerTitle='Anam Cau - Palm Plate' id='palm-leaf' />
                 <SlideModule backgroundImage='/img/header-9.jpg' headerTitle='Grassgreen Straw Reed' id='grass-straw' />
             </Carousel>
         </div>

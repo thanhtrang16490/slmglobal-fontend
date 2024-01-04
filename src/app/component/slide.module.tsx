@@ -2,6 +2,7 @@
 import { Content } from "antd/es/layout/layout";
 import { Button, Typography } from 'antd';
 import Image from 'next/image'
+import Link from "next/link";
 
 
 
@@ -78,7 +79,7 @@ const SlideModule = ({ backgroundImage, headerTitle, id }: SlideModuleProps) => 
                         }}
                     >
                         <Button ghost style={{ margin: '10px' }}>More detail</Button>
-                        <Button ghost style={{ margin: '10px' }}>Get free quote</Button>
+                        <Button ghost style={{ margin: '10px' }}><Link href={'/contact'}>Get free quote</Link></Button>
                     </div>
                 </div>
             </div>
