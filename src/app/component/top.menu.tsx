@@ -15,7 +15,7 @@ const topMenuItems: MenuProps['items'] = [
     },
     {
         label:
-            <Link href='/about-us'>About Us</Link>,
+            <Link href='/'>About Us</Link>,
         key: 'about-us',
     },
 
@@ -38,47 +38,47 @@ const mainMenuItems: MenuProps['items'] = [
 
     {
         label:
-            <Link href='/#solar' >Solar</Link>,
+            <Link href='/product' >Solar</Link>,
         key: 'solar',
     },
     {
         label:
-            <Link href='/product/screw' >Screw</Link>,
+            <Link href='/product' >Screw</Link>,
         key: 'screw',
     },
     {
         label:
-            <Link href='/product/aluminum' >Aluminum</Link>,
+            <Link href='/product' >Aluminum</Link>,
         key: 'aluminum',
     },
     {
         label:
-            <Link href='/product/steel-casting' > Steel Casting</Link>,
+            <Link href='/product' > Steel Casting</Link>,
         key: 'steel-casting',
     },
     {
         label:
-            <Link href='/product/rubber' >Rubber</Link>,
+            <Link href='/product' >Rubber</Link>,
         key: 'rubber',
     },
     {
         label:
-            <Link href='/product/wood' >Wood</Link>,
+            <Link href='/product' >Wood</Link>,
         key: 'wood',
     },
     {
         label:
-            <Link href='/product/pipes' >Pipes</Link>,
+            <Link href='/product' >Pipes</Link>,
         key: 'pipes',
     },
     {
         label:
-            <Link href='/product/palm-leaf' >Palm Leaf</Link>,
+            <Link href='/product' >Palm Leaf</Link>,
         key: 'palm-leaf',
     },
     {
         label:
-            <Link href='/product/grass-straw' >Grass Straw</Link>,
+            <Link href='/product' >Grass Straw</Link>,
         key: 'grass-straw',
     },
 
@@ -111,7 +111,7 @@ const TopMenuComponent: React.FC = () => {
                         style={{ justifyContent: 'center', background: 'none', border: 'none' }} />
                     <Flex justify='space-evenly' gap="middle" align='center'>
 
-                        <Button type="text"><InfoCircleFilled /> <Link href='/product'>Catalogue</Link></Button>
+
                         <Button shape="round" ><FilePdfOutlined /> <Link target='_blank' rel='noopener noreferrer' href='https://indd.adobe.com/view/156a9b15-33b4-46f5-a713-2c71fc8fafbd'>Profile</Link></Button>
 
                     </Flex>

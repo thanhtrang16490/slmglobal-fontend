@@ -28,7 +28,7 @@ export default function RootLayout({
             </Layout>
             <Footer style={{ textAlign: 'center' }}>SLMGLOBAL©2023</Footer>
           </Layout>
-          <ChatBoxModule />
+
         </StyledComponentsRegistry>
 
       </body>
