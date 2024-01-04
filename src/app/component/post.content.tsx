@@ -28,7 +28,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                     <div style={{ padding: '50px 20px 20px', display: 'flex', justifyContent: 'center' }}>
                         <Card
                             style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}
-                            title={<Typography.Title level={4} style={{ whiteSpace: 'pre-line' }}>{post.data.attributes.Title}</Typography.Title>}
+                            title={<Typography.Title level={4} style={{ whiteSpace: 'pre-line' }}>{post.data.attributes.title}</Typography.Title>}
                         >
                             <Meta
                                 description={

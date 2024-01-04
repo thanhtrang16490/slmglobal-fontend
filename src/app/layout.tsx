@@ -18,6 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
+      </head>
       <body style={{ margin: 0, padding: 0 }}>
 
         <StyledComponentsRegistry>
