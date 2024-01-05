@@ -42,8 +42,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                                             />
                                         </div>
                                         <Typography.Paragraph style={{ margin: 0 }}>
-
-                                            <div dangerouslySetInnerHTML={{ __html: post.data.attributes.Content }} />
+                                            <div dangerouslySetInnerHTML={{ __html: post.data.attributes.Content }} ></div>
                                         </Typography.Paragraph>
                                     </div>
                                 }
@@ -62,7 +61,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                     }}>
                     <div
                         style={{ background: 'white', margin: '50px 20px 0 0', borderRadius: '8px' }}>
-                        <Card title={<Typography.Title level={4}>New Articles</Typography.Title>}>
+                        <Card title={<Typography.Title level={4}>News Feature</Typography.Title>}>
 
                         </Card>
 

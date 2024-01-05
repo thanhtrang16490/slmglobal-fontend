@@ -20,13 +20,13 @@ const getData = async () => {
 }
 
 
-const ScrewPage = async () => {
+const AluminumPage = async () => {
   const products = await getData();
   // console.log(products);
   return (
     <Row gutter={16}>
       {products.data.map((product: Product) => (
-        <Col key={product.id} xs={24} sm={12} md={8} lg={6} xl={4}>
+        <Col key={product.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
           <ProductCard product={product} />
         </Col>
       ))}
@@ -34,4 +34,4 @@ const ScrewPage = async () => {
   );
 }
 
-export default ScrewPage;
+export default AluminumPage;
