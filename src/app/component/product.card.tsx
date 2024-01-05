@@ -16,16 +16,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
     return (
 
-        <div style={{ padding: '50px 20px 20px' }}>
+        <div style={{ padding: '20px 5px 5px' }}>
             <Card
                 style={{ width: '100%', height: '100%', position: 'relative' }}
                 cover={
-                    <Link href={`/product/${product?.attributes?.slug}`}>
+                    <Link href={`/product/${product.attributes.slug}`}>
                         <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                             <Image style={{ padding: '15px' }}
                                 layout="fill"
                                 objectFit="cover"
-                                src={`http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.formats.medium.url}`}
+                                src={`http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`}
                                 alt={product.attributes.name}
                             />
                         </div>

@@ -26,7 +26,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                 <Image
                                     layout="fill"
                                     objectFit="cover"
-                                    src={`http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.formats.medium.url}`}
+                                    src={`http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`}
                                     alt={product.data.attributes.name}
                                 />
                             </div>
