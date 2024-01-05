@@ -38,52 +38,52 @@ const mainMenuItems: MenuProps['items'] = [
 
     {
         label:
-            <Link href='/product' >Solar</Link>,
+            <Link href='/solar' >Solar</Link>,
         key: 'solar',
     },
     {
         label:
-            <Link href='/product' >Screw</Link>,
+            <Link href='/screw' >Screw</Link>,
         key: 'screw',
     },
     {
         label:
-            <Link href='/product' >Aluminum</Link>,
+            <Link href='/aluminum' >Aluminum</Link>,
         key: 'aluminum',
     },
     {
         label:
-            <Link href='/product' > Steel Casting</Link>,
+            <Link href='/steel-casting' > Steel Casting</Link>,
         key: 'steel-casting',
     },
     {
         label:
-            <Link href='/product' >Rubber</Link>,
+            <Link href='/rubber' >Rubber</Link>,
         key: 'rubber',
     },
     {
         label:
-            <Link href='/product' >Wood</Link>,
+            <Link href='/wood' >Wood</Link>,
         key: 'wood',
     },
     {
         label:
-            <Link href='/product' >Pipes</Link>,
+            <Link href='/pipes' >Pipes</Link>,
         key: 'pipes',
     },
     {
         label:
-            <Link href='/product' >Brass Vales</Link>,
+            <Link href='/brass-vales' >Brass Vales</Link>,
         key: 'brass-vales',
     },
     {
         label:
-            <Link href='/product' >Palm Plate</Link>,
-        key: 'Palm-plate',
+            <Link href='/palm-plate' >Palm Plate</Link>,
+        key: 'palm-plate',
     },
     {
         label:
-            <Link href='/product' >Grass Straw</Link>,
+            <Link href='/grass-straw' >Grass Straw</Link>,
         key: 'grass-straw',
     },
 
