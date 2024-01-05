@@ -4,6 +4,7 @@ import TopMenuComponent from './component/top.menu'
 import { Layout } from 'antd'
 import { Footer } from 'antd/es/layout/layout'
 import ChatBoxModule from './component/chat.box'
+import AnalyticsGoogle from './component/analytics.google'
 
 
 export const metadata: Metadata = {
@@ -26,10 +27,8 @@ export default function RootLayout({
           sizes="<generated>"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-
-
-
       </head>
+      <AnalyticsGoogle />
       <body style={{ margin: 0, padding: 0 }}>
 
         <StyledComponentsRegistry>

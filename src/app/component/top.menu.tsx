@@ -73,6 +73,11 @@ const mainMenuItems: MenuProps['items'] = [
     },
     {
         label:
+            <Link href='/product' >Brass Vales</Link>,
+        key: 'brass-vales',
+    },
+    {
+        label:
             <Link href='/product' >Palm Plate</Link>,
         key: 'Palm-plate',
     },
