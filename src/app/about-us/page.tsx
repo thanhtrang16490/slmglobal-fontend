@@ -1,5 +1,5 @@
 'use client'
-import { Col, Layout, Row, Typography } from "antd";
+import { Col, Divider, Layout, Row, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 
 
@@ -26,11 +26,9 @@ const AboutUsPage: React.FC = () => {
                     <Typography.Paragraph style={{ color: '#115cfa', fontSize: '24px', lineHeight: '1.4', fontWeight: 300, padding: '0 30px' }}>
                         With foresight and commitment to constantly striving for perfection, we have been constantly striving to bring the best dedication and quality to our customers.
                     </Typography.Paragraph>
-                    <hr style={{
-                        borderColor: '#115cfa !important'
-                    }}></hr>
+                    <Divider />
                 </Content>
-                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px', borderBottom: "solid 1px #eaeaea" }}>
+                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
                         <p style={{ fontSize: '25px', color: '#0016b3' }}>
                             Creativity and Innovation
@@ -41,8 +39,10 @@ const AboutUsPage: React.FC = () => {
                             We are always looking for new and innovative solutions to meet the needs of our customers. We encourage innovation and are willing to push the limits to deliver cutting-edge clean energy solutions.
                         </p>
                     </Col>
+                    <Divider />
                 </Row>
-                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px', borderBottom: "solid 1px #eaeaea" }}>
+
+                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
                         <p style={{ fontSize: '25px', color: '#0016b3' }}>
                             Quality and Reliability
@@ -54,12 +54,12 @@ const AboutUsPage: React.FC = () => {
                             Quality and reliability are our core principles. We are committed to providing high quality products and services, ensuring maximum performance and reliability in every project.
                         </p>
                     </Col>
+                    <Divider />
                 </Row>
-                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px', borderBottom: "solid 1px #eaeaea" }}>
+                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
                         <p style={{ fontSize: '25px', color: '#0016b3' }}>
                             Devotion and Consulting
-
                         </p>
                     </Col>
                     <Col xs={24} sm={24} md={18} lg={19} xl={19} style={{ flex: '80%', alignItems: 'center' }}>
@@ -67,8 +67,9 @@ const AboutUsPage: React.FC = () => {
                             We are dedicated to listening to our customers and understanding their needs. We not only provide products, but also act as trusted consultants, helping customers choose the most suitable solution.
                         </p>
                     </Col>
+                    <Divider />
                 </Row>
-                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px', borderBottom: "solid 1px #eaeaea" }}>
+                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
                         <p style={{ fontSize: '25px', color: '#0016b3' }}>
                             Sustainability and Environment
@@ -79,8 +80,9 @@ const AboutUsPage: React.FC = () => {
                             We are committed to promoting the use of renewable energy to make a positive contribution to environmental protection. We aim to build a sustainable future and help minimize the negative impact on the planet.
                         </p>
                     </Col>
+                    <Divider />
                 </Row>
-                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px', borderBottom: "solid 1px #eaeaea" }}>
+                <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
                         <p style={{ fontSize: '25px', color: '#0016b3' }}>
                             Cooperation and Relationship Building
