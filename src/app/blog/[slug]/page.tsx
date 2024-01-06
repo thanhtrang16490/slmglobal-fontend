@@ -1,14 +1,9 @@
 
 import PostContent from '@/app/component/post.content';
 
-
-
-
 type Params = {
   slug: string;
 };
-
-
 
 const getData = async (slug: string) => {
   const res = await fetch(`https://api.slmglobal.vn/api/slugify/slugs/blog/${slug}?populate=*`);
@@ -19,11 +14,8 @@ const getData = async (slug: string) => {
 }
 
 const SingleBlogPage = async ({ params }: { params: Params }) => {
-
-
   const { slug } = params;
   const post = await getData(slug);
-
 
   return (
     <PostContent post={post} />

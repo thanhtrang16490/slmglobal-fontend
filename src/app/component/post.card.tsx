@@ -17,7 +17,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
 
     return (
 
-        <div style={{ padding: '50px 20px 20px' }}>
+        <div style={{ padding: '20px 5px 5px' }}>
             <Card
                 style={{ width: '100%', height: '100%', position: 'relative' }}
                 cover={

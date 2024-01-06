@@ -24,7 +24,7 @@ const BlogPage = async () => {
   return (
     <Row gutter={16}>
       {posts.data.map((post: Post) => (
-        <Col key={post.id} xs={24} sm={24} md={8} lg={6} xl={6}>
+        <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
           <PostCard post={post} />
         </Col>
       ))}
