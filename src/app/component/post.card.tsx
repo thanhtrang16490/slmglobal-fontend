@@ -9,13 +9,11 @@ import Meta from 'antd/es/card/Meta';
 
 type PostCardProps = {
     post: any;
-    loading: boolean;
+
 };
 
-const PostCard: React.FC<PostCardProps> = ({ post, loading }) => {
-    if (loading) {
-        return <Skeleton active />;
-    }
+const PostCard: React.FC<PostCardProps> = ({ post }) => {
+
 
 
     return (
