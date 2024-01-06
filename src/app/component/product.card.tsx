@@ -31,11 +31,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                                         ? `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`
                                         : "/img/place-holder.png"
                                 }
-                                onError={(e) => {
-                                    const target = e.target as HTMLImageElement;
-                                    target.onerror = null;
-                                    target.src = "/img/place-holder.png";
-                                }}
+
                                 alt={product.attributes.name}
                             />
                         </div>

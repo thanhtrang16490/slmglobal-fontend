@@ -33,11 +33,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                             ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`
                                             : "/img/place-holder.png"
                                     }
-                                    onError={(e) => {
-                                        const target = e.target as HTMLImageElement;
-                                        target.onerror = null;
-                                        target.src = "/img/place-holder.png";
-                                    }}
                                     alt={product.attributes ? product.attributes.name : ""}
                                 />
                             </div>
