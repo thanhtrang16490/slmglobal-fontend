@@ -1,5 +1,6 @@
 'use client'
 
+
 import { Card, Col, Row, Typography } from 'antd';
 import Image from 'next/image';
 import Meta from 'antd/es/card/Meta';
@@ -24,10 +25,20 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                         <Card style={{ marginTop: '20px' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={4}>{product.data.attributes.name}</Typography.Title>}>
                             <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                                 <Image
+                                    style={{ padding: '15px' }}
                                     layout="fill"
                                     objectFit="cover"
-                                    src={`http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`}
-                                    alt={product.data.attributes.name}
+                                    src={
+                                        product.data.attributes.feature_image.data
+                                            ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`
+                                            : "/img/place-holder.png"
+                                    }
+                                    onError={(e) => {
+                                        const target = e.target as HTMLImageElement;
+                                        target.onerror = null;
+                                        target.src = "/img/place-holder.png";
+                                    }}
+                                    alt={product.attributes ? product.attributes.name : ""}
                                 />
                             </div>
                         </Card>
@@ -74,7 +85,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                     <Col xs={24} sm={24} md={18}>
                         <Card title='Description'>
                             <Typography.Paragraph style={{ margin: 0 }}>
-                                <div dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
+                                <div
+
+                                    dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
                             </Typography.Paragraph>
                             <Typography.Title level={5} >
                                 Packing & Delivery

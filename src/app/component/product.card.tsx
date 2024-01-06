@@ -22,10 +22,20 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 cover={
                     <Link href={`/product/${product.attributes.slug}`}>
                         <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
-                            <Image style={{ padding: '15px' }}
+                            <Image
+                                style={{ padding: '15px' }}
                                 layout="fill"
                                 objectFit="cover"
-                                src={`http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`}
+                                src={
+                                    product.attributes.feature_image.data
+                                        ? `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`
+                                        : "/img/place-holder.png"
+                                }
+                                onError={(e) => {
+                                    const target = e.target as HTMLImageElement;
+                                    target.onerror = null;
+                                    target.src = "/img/place-holder.png";
+                                }}
                                 alt={product.attributes.name}
                             />
                         </div>
