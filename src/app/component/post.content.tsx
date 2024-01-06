@@ -39,7 +39,17 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                                                 objectFit="cover"
                                                 src={`http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.url}`}
                                                 alt={post.data.attributes.Title}
+
                                             />
+                                            src={
+                                                post.data.attributes.FeaturedImage.data && post.data.attributes.FeaturedImage.data.attributes.formats
+                                                    ? post.data.attributes.FeaturedImage.data.attributes.formats.medium
+                                                        ? `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.formats.medium.url}`
+                                                        : post.data.attributes.FeaturedImage.data.attributes.formats.large
+                                                            ? `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.formats.large.url}`
+                                                            : `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.url}`
+                                                    : "/img/place-holder.png"
+                                            }
                                         </div>
                                         <Typography.Paragraph style={{ margin: 0 }}>
                                             <div dangerouslySetInnerHTML={{ __html: post.data.attributes.Content }} ></div>
