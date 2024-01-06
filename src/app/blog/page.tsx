@@ -8,7 +8,7 @@ type Post = {
 
 const getData = async () => {
   const res = await fetch('https://api.slmglobal.vn/api/blogs?populate=*', {
-    // next: { revalidate: 3600 }
+    next: { revalidate: 3600 }
   });
   if (!res.ok) {
     throw new Error(res.statusText);

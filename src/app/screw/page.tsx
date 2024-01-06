@@ -10,7 +10,7 @@ type Product = {
 
 const getData = async () => {
   const res = await fetch('https://api.slmglobal.vn/api/products?filters[category][$eq]=Mounting%20Screw&populate=*', {
-    // next: { revalidate: 3600 }
+    next: { revalidate: 3600 }
   });
   if (!res.ok) {
     throw new Error(res.statusText);
