@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, Typography } from 'antd';
+import { Card, Skeleton, Typography } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 import Meta from 'antd/es/card/Meta';
@@ -9,10 +9,13 @@ import Meta from 'antd/es/card/Meta';
 
 type PostCardProps = {
     post: any;
+    loading: boolean;
 };
 
-const PostCard: React.FC<PostCardProps> = ({ post }) => {
-
+const PostCard: React.FC<PostCardProps> = ({ post, loading }) => {
+    if (loading) {
+        return <Skeleton active />;
+    }
 
 
     return (
