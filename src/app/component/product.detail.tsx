@@ -1,7 +1,6 @@
 'use client'
 
-
-import { Card, Col, Row, Typography } from 'antd';
+import { Button, Card, Col, Divider, Row, Typography } from 'antd';
 import Image from 'next/image';
 import Meta from 'antd/es/card/Meta';
 
@@ -10,18 +9,12 @@ type ProductDetailProps = {
 };
 
 const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
-
-
-
     return (
 
         <div style={{ padding: '50px 20px 20px', display: 'flex', justifyContent: 'center' }}>
             <div style={{ maxWidth: '1200px', width: '100%', height: '100%', position: 'relative' }}>
                 <Row gutter={16}>
-
-
                     <Col xs={24} sm={24} md={12}>
-
                         <Card style={{ marginTop: '20px' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={4}>{product.data.attributes.name}</Typography.Title>}>
                             <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                                 <Image
@@ -29,8 +22,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                     layout="fill"
                                     objectFit="cover"
                                     src={
-                                        product.data.attributes.feature_image.data
-                                            ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`
+                                        product.data.attributes.feature_image.data && product.data.attributes.feature_image.data.attributes.formats
+                                            ? product.data.attributes.feature_image.data.attributes.formats.medium
+                                                ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.formats.medium.url}`
+                                                : product.data.attributes.feature_image.data.attributes.formats.large
+                                                    ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.formats.large.url}`
+                                                    : `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`
                                             : "/img/place-holder.png"
                                     }
                                     alt={product.attributes ? product.attributes.name : ""}
@@ -41,8 +38,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                     <Col xs={24} sm={24} md={12}>
                         <Card style={{ marginTop: '20px' }}
                         >
-                            <Typography.Paragraph >Product Catogery:
-                                {product.data.attributes.Category}
+                            <Typography.Paragraph >Product Catogery: <Button type="dashed">{product.data.attributes.category}</Button>
                             </Typography.Paragraph>
                             <Meta description={<Typography.Paragraph>{product.data.attributes.feature}</Typography.Paragraph>} />
                             <Typography.Title level={5}>
@@ -54,9 +50,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                 Whatsapp: <a href="tel:+84989837143">+84 (989) 837-143</a>
                                 <br />
                                 Email: <a href="mailto:Tracy@slmglobal.vn">Tracy@slmglobal.vn</a>
-
                             </Typography.Paragraph>
-                            <div><hr></hr></div>
+                            <Divider />
                             <Typography.Paragraph>
                                 Product Director: Daniel Nguyen (Mr.)
                                 <br />
@@ -64,7 +59,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                 <br />
                                 Email: <a href="mailto:Daniel@slmglobal.vn">Daniel@slmglobal.vn</a>
                             </Typography.Paragraph>
-                            <div><hr></hr></div>
+                            <Divider />
                             <Typography.Paragraph>
                                 Tenical Manager: Victor Nguyen (Mr.)
                                 <br />

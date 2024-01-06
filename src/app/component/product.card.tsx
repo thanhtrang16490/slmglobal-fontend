@@ -27,8 +27,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                                 layout="fill"
                                 objectFit="cover"
                                 src={
-                                    product.attributes.feature_image.data
-                                        ? `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`
+                                    product.attributes.feature_image.data && product.attributes.feature_image.data.attributes.formats
+                                        ? product.attributes.feature_image.data.attributes.formats.medium
+                                            ? `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.formats.medium.url}`
+                                            : product.attributes.feature_image.data.attributes.formats.large
+                                                ? `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.formats.large.url}`
+                                                : `http://api.slmglobal.vn${product.attributes.feature_image.data.attributes.url}`
                                         : "/img/place-holder.png"
                                 }
 
