@@ -12,7 +12,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
     return (
 
         <div style={{ padding: '50px 20px 20px', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ maxWidth: '1200px', width: '100%', height: '100%', position: 'relative' }}>
+            <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
                 <Row gutter={16}>
                     <Col xs={24} sm={24} md={12}>
                         <Card style={{ marginTop: '20px' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={4}>{product.data.attributes.name}</Typography.Title>}>
