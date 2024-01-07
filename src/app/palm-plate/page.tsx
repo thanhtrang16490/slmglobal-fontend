@@ -9,7 +9,7 @@ type Product = {
 
 
 const getData = async () => {
-  const res = await fetch('https://api.slmglobal.vn/api/products?filters[category][$eq]=Palm%20Plate&populate=*', {
+  const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Palm%20Plate&populate=*`, {
     next: { revalidate: 3600 }
   });
   if (!res.ok) {

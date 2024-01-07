@@ -24,10 +24,10 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                     src={
                                         product.data.attributes.feature_image.data && product.data.attributes.feature_image.data.attributes.formats
                                             ? product.data.attributes.feature_image.data.attributes.formats.medium
-                                                ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.formats.medium.url}`
+                                                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.data.attributes.feature_image.data.attributes.formats.medium.url}`
                                                 : product.data.attributes.feature_image.data.attributes.formats.large
-                                                    ? `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.formats.large.url}`
-                                                    : `http://api.slmglobal.vn${product.data.attributes.feature_image.data.attributes.url}`
+                                                    ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.data.attributes.feature_image.data.attributes.formats.large.url}`
+                                                    : `${process.env.NEXT_PUBLIC_BACKEND_URL}${product.data.attributes.feature_image.data.attributes.url}`
                                             : "/img/place-holder.png"
                                     }
                                     alt={product.attributes ? product.attributes.name : ""}

@@ -6,7 +6,7 @@ type Params = {
 
 
 const getData = async (slug: string) => {
-    const res = await fetch(`https://api.slmglobal.vn/api/slugify/slugs/product/${slug}?populate=*`);
+    const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/product/${slug}?populate=*`);
     if (!res.ok) {
         throw new Error(res.statusText);
     }

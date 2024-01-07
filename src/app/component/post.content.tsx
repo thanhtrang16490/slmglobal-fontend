@@ -37,17 +37,17 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                                             <Image
                                                 layout="fill"
                                                 objectFit="cover"
-                                                src={`http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.url}`}
+                                                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${post.data.attributes.FeaturedImage.data.attributes.url}`}
                                                 alt={post.data.attributes.Title}
 
                                             />
                                             src={
                                                 post.data.attributes.FeaturedImage.data && post.data.attributes.FeaturedImage.data.attributes.formats
                                                     ? post.data.attributes.FeaturedImage.data.attributes.formats.medium
-                                                        ? `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.formats.medium.url}`
+                                                        ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.data.attributes.FeaturedImage.data.attributes.formats.medium.url}`
                                                         : post.data.attributes.FeaturedImage.data.attributes.formats.large
-                                                            ? `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.formats.large.url}`
-                                                            : `http://api.slmglobal.vn${post.data.attributes.FeaturedImage.data.attributes.url}`
+                                                            ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.data.attributes.FeaturedImage.data.attributes.formats.large.url}`
+                                                            : `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.data.attributes.FeaturedImage.data.attributes.url}`
                                                     : "/img/place-holder.png"
                                             }
                                         </div>

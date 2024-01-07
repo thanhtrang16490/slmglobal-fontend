@@ -32,10 +32,10 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                                 src={
                                     post.attributes.Thumbail.data && post.attributes.Thumbail.data.attributes.formats
                                         ? post.attributes.Thumbail.data.attributes.formats.medium
-                                            ? `http://api.slmglobal.vn${post.attributes.Thumbail.data.attributes.formats.medium.url}`
+                                            ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.attributes.Thumbail.data.attributes.formats.medium.url}`
                                             : post.attributes.Thumbail.data.attributes.formats.large
-                                                ? `http://api.slmglobal.vn${post.attributes.Thumbail.data.attributes.formats.large.url}`
-                                                : `http://api.slmglobal.vn${post.attributes.Thumbail.data.attributes.url}`
+                                                ? `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.attributes.Thumbail.data.attributes.formats.large.url}`
+                                                : `${process.env.NEXT_PUBLIC_BACKEND_URL}${post.attributes.Thumbail.data.attributes.url}`
                                         : "/img/place-holder.png"
                                 }
 

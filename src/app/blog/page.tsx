@@ -7,7 +7,7 @@ type Post = {
 
 
 const getData = async () => {
-  const res = await fetch('https://api.slmglobal.vn/api/blogs?populate=*', {
+  const res = await fetch(`${process.env.BACKEND_URL}blogs?populate=*`, {
     next: { revalidate: 3600 }
   });
   if (!res.ok) {

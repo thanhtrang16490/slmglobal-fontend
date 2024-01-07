@@ -7,7 +7,7 @@ type Product = {
 };
 
 const getData = async () => {
-  const res = await fetch('https://api.slmglobal.vn/api/products?filters[category][$eq]=Iron%20Steel%20Casting&populate=*', {
+  const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Iron%20Steel%20Casting&populate=*`, {
     next: { revalidate: 3600 }
   });
   if (!res.ok) {
