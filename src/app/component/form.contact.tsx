@@ -80,13 +80,14 @@ const FormContact = () => {
             location: 'Your Location',
         }}
     >
-
-        <Form.Item label="Name" name="name" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input addonBefore={selectBefore} defaultValue="Your Name" />
-        </Form.Item>
-        <Form.Item label="Company" name="company" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="Your Company" />
-        </Form.Item>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Form.Item label="Name" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input addonBefore={selectBefore} defaultValue="Your Name" />
+            </Form.Item>
+            <Form.Item label="Company" name="company" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input placeholder="Your Company" />
+            </Form.Item>
+        </div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Form.Item label="Phone" name="phone" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="Your Phone Number" />
@@ -95,23 +96,31 @@ const FormContact = () => {
                 <Input placeholder="Your Email" />
             </Form.Item>
         </div>
+
+
         <Form.Item label="Category" name="category">
             <CatogerySelection />
         </Form.Item>
-        <Form.Item label="Technical drawings / Blueprint" name="location" style={{ flex: 1, marginRight: '1rem' }}>
-            <Upload {...props}>
-                <Button icon={<UploadOutlined />}>Click to Upload</Button>
-            </Upload>
-        </Form.Item>
-        <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="" />
-        </Form.Item>
-        <Form.Item label="Standard requirements" name="requirements" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="" />
-        </Form.Item>
-        <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="" />
-        </Form.Item>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input placeholder="" />
+            </Form.Item>
+            <Form.Item label="Technical drawings / Blueprint" name="location" style={{ flex: 1, marginRight: '1rem' }}>
+                <Upload {...props}>
+                    <Button icon={<UploadOutlined />}>Click to Upload</Button>
+                </Upload>
+            </Form.Item>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+
+            <Form.Item label="Standard requirements" name="requirements" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input placeholder="" />
+            </Form.Item>
+            <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input placeholder="" />
+            </Form.Item>
+
+        </div>
 
 
 
