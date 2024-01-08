@@ -23,7 +23,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                     <Link href={`/product/${product.attributes.slug}`}>
                         <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                             <Image
-                                style={{ padding: '15px' }}
+                                style={{ padding: '8px' }}
                                 layout="fill"
                                 objectFit="cover"
                                 src={
