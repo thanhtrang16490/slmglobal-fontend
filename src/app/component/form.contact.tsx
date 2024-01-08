@@ -60,13 +60,13 @@ const FormContact = () => {
             <CatogerySelection />
         </Form.Item>
         <Form.Item label="Quantity of product ordered" name="name" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="Your Name" />
+            <Input placeholder="" />
         </Form.Item>
         <Form.Item label="Standard requirements" name="name" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="Your Name" />
+            <Input placeholder="" />
         </Form.Item>
         <Form.Item label="Delivery port location" name="name" style={{ flex: 1, marginRight: '1rem' }}>
-            <Input placeholder="Your Name" />
+            <Input placeholder="" />
         </Form.Item>
 
 
