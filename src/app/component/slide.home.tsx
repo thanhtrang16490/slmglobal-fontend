@@ -7,8 +7,8 @@ import SlideModule from "./slide.module";
 const SlideHomeModule = () => {
 
     return (
-        <div style={{ marginTop: '-181px' }}>
-            <Carousel dotPosition="bottom" autoplay draggable>
+        <div style={{ marginTop: '-116px' }}>
+            <Carousel dotPosition="left" autoplay draggable>
                 <SlideModule backgroundImage='/img/header-1.jpg' headerTitle='Renewable Energy Products' id='solar' />
                 <SlideModule backgroundImage='/img/header-2.jpg' headerTitle='Mounting Screw Products' id='screw' />
                 <SlideModule backgroundImage='/img/header-4.jpg' headerTitle='Aluminum Frame Products' id='aluminum' />

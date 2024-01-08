@@ -106,7 +106,7 @@ const TopMenuComponent: React.FC = () => {
                 <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ minWidth: 0, flex: "auto", maxWidth: '330px', lineHeight: '40px', backgroundColor: '#000' }} theme='dark' />
             </Flex>
 
-            <div style={{ padding: '10px 0', backgroundColor: '#fff' }}>
+            <div style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
                 <Flex justify='space-evenly' align='center' >
                     <Flex align='center'>
 

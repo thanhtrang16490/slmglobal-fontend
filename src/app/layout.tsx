@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import StyledComponentsRegistry from '@/lib/antd.registry'
 import TopMenuComponent from './component/top.menu'
 import { Layout } from 'antd'
-import { Footer } from 'antd/es/layout/layout'
+
 import ChatBoxModule from './component/chat.box'
 import AnalyticsGoogle from './component/analytics.google'
+import Footer from './component/footer'
+import FooterModule from './component/footer'
 
 
 export const metadata: Metadata = {
@@ -37,7 +39,7 @@ export default function RootLayout({
             <Layout style={{ marginTop: '116px' }}>
               {children}
             </Layout>
-            <Footer style={{ textAlign: 'center' }}>SLMGLOBAL©2023</Footer>
+
           </Layout>
           <ChatBoxModule />
         </StyledComponentsRegistry>
