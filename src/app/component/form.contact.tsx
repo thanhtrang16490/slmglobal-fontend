@@ -1,7 +1,28 @@
 'use client'
-import { Form, Input, Button, Select, Space } from 'antd';
+import { Form, Input, Button, Select, Space, Upload, UploadProps, message } from 'antd';
 import type { SelectProps } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
+
 const { Option } = Select;
+
+
+const props: UploadProps = {
+    name: 'file',
+    action: 'https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188',
+    headers: {
+        authorization: 'authorization-text',
+    },
+    onChange(info) {
+        if (info.file.status !== 'uploading') {
+            console.log(info.file, info.fileList);
+        }
+        if (info.file.status === 'done') {
+            message.success(`${info.file.name} file uploaded successfully`);
+        } else if (info.file.status === 'error') {
+            message.error(`${info.file.name} file upload failed.`);
+        }
+    },
+};
 
 const options: SelectProps['options'] = [
     { label: 'Renewable Energy', value: 'renewable-energy' },
@@ -77,6 +98,11 @@ const FormContact = () => {
         <Form.Item label="Category" name="category">
             <CatogerySelection />
         </Form.Item>
+        <Form.Item label="Technical drawings / Blueprint" name="location" style={{ flex: 1, marginRight: '1rem' }}>
+            <Upload {...props}>
+                <Button icon={<UploadOutlined />}>Click to Upload</Button>
+            </Upload>
+        </Form.Item>
         <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
@@ -86,6 +112,7 @@ const FormContact = () => {
         <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
+
 
 
         <Form.Item label="Message" name="message">
