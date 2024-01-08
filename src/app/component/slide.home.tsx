@@ -1,3 +1,4 @@
+'use client'
 import { Carousel } from "antd";
 import SlideModule from "./slide.module";
 
