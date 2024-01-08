@@ -16,7 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
     return (
 
-        <div style={{ padding: '20px 5px 5px' }}>
+        <div style={{ padding: '6px 5px 5px' }}>
             <Card
                 style={{ width: '100%', height: '100%', position: 'relative' }}
                 cover={
@@ -45,7 +45,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 <Meta
                     description={
                         <Link href={`/product/${product?.attributes.slug}`}>
-                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '500' }}>
+                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '400' }}>
                                 <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: product?.attributes?.name }} />
                             </Typography.Paragraph>
                         </Link>

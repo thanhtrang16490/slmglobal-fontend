@@ -15,7 +15,7 @@ type PostCardProps = {
 const PostCard: React.FC<PostCardProps> = ({ post }) => {
     return (
 
-        <Content style={{ padding: '20px 5px 5px' }}>
+        <Content style={{ padding: '6px 5px 5px' }}>
             <Card
                 style={{ width: '100%', height: '100%', position: 'relative' }}
                 cover={
@@ -45,7 +45,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 <Meta
                     description={
                         <Link href={`/product/${post?.attributes.slug}`}>
-                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '500' }}>
+                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '400' }}>
                                 <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: post?.attributes?.title }} />
                             </Typography.Paragraph>
                         </Link>

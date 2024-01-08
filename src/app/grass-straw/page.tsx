@@ -25,9 +25,9 @@ const GrassStrawPage = async () => {
   // console.log(products);
   return (
     <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Row gutter={16}>
+      <Row gutter={3}>
         {products.data.map((product: Product) => (
-          <Col key={product.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
+          <Col key={product.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
             <ProductCard product={product} />
           </Col>
         ))}
