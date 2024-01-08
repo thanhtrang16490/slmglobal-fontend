@@ -6,14 +6,14 @@ const { Option } = Select;
 const options: SelectProps['options'] = [
     { label: 'Renewable Energy', value: 'renewable-energy' },
     { label: 'Mounting Screw', value: 'mounting-screw' },
-    { label: 'Alumilumn Frame', value: 'Orange' },
-    { label: 'Iron Steel Casting', value: 'Apple' },
-    { label: 'Moulding Extruded Rubber', value: 'Pear' },
-    { label: 'Orange', value: 'Orange' },
-    { label: 'Apple', value: 'Apple' },
-    { label: 'Pear', value: 'Pear' },
-    { label: 'Orange', value: 'Orange' },
-    { label: 'Orange', value: 'Orange' },
+    { label: 'Alumilumn Frame', value: 'alumilumn-frame' },
+    { label: 'Iron Steel Casting', value: 'iron-steel-casting' },
+    { label: 'Moulding Extruded Rubber', value: 'moulding-extruded-rubber' },
+    { label: 'Plywood', value: 'plywood' },
+    { label: 'Plastic Pipes', value: 'plastic-pipes' },
+    { label: 'Brass Vales & Taps', value: 'brass-vales-taps' },
+    { label: 'Palm Plate', value: 'palm-plate' },
+    { label: 'Grass Green Straw', value: 'Grass-green-straw' },
 ];
 
 const selectBefore = (
