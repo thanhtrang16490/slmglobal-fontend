@@ -41,13 +41,13 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                     </Link>
                 }
             >
+
                 <Meta
                     description={
-                        <Link href={`/blog/${post?.attributes.slug}`}>
-                            <Typography.Title level={5} style={{ margin: 0 }}>
-                                {post?.attributes?.title}
-                            </Typography.Title>
-
+                        <Link href={`/product/${post?.attributes.slug}`}>
+                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '500' }}>
+                                <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: post?.attributes?.title }} />
+                            </Typography.Paragraph>
                         </Link>
                     }
                 />

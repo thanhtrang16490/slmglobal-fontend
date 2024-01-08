@@ -45,10 +45,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 <Meta
                     description={
                         <Link href={`/product/${product?.attributes.slug}`}>
-                            <Typography.Title level={5} style={{ margin: 0 }}>
-                                {product?.attributes?.name}
-                            </Typography.Title>
-
+                            <Typography.Paragraph style={{ margin: 0, fontSize: '14px', fontWeight: '500' }}>
+                                <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: product?.attributes?.name }} />
+                            </Typography.Paragraph>
                         </Link>
                     }
                 />
