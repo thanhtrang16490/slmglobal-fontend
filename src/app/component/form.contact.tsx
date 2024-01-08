@@ -27,7 +27,7 @@ const props: UploadProps = {
 const options: SelectProps['options'] = [
     { label: 'Renewable Energy', value: 'renewable-energy' },
     { label: 'Mounting Screw', value: 'mounting-screw' },
-    { label: 'Alumilumn Frame', value: 'alumilumn-frame' },
+    { label: 'Aluminum Frame', value: 'alumilum-frame' },
     { label: 'Iron Steel Casting', value: 'iron-steel-casting' },
     { label: 'Moulding Extruded Rubber', value: 'moulding-extruded-rubber' },
     { label: 'Plywood', value: 'plywood' },
