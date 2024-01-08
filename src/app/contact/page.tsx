@@ -1,3 +1,4 @@
+'use client'
 import { Row, Col, Layout } from 'antd';
 import FormContact from '../component/form.contact';
 import { Content } from 'antd/es/layout/layout';
