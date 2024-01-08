@@ -1,7 +1,7 @@
 'use client'
 import { Form, Input, Button, Select, Space } from 'antd';
 import type { SelectProps } from 'antd';
-
+const { Option } = Select;
 
 const options: SelectProps['options'] = [
     { label: 'Renewable Energy', value: 'renewable-energy' },
@@ -47,7 +47,18 @@ const CatogerySelection: React.FC = () => (
 );
 
 const FormContact = () => {
-    return (<Form layout="vertical">
+    return (<Form layout="vertical"
+        initialValues={{
+            name: 'Your Name',
+            company: 'Your Company',
+            phone: 'Your Phone Number',
+            email: 'Your Email',
+            category: 'Your Category',
+            quantity: 'Your Quantity',
+            requirements: 'Your Requirements',
+            location: 'Your Location',
+        }}
+    >
 
         <Form.Item label="Name" name="name" style={{ flex: 1, marginRight: '1rem' }}>
             <Input addonBefore={selectBefore} defaultValue="Your Name" />
@@ -55,8 +66,6 @@ const FormContact = () => {
         <Form.Item label="Company" name="company" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="Your Company" />
         </Form.Item>
-
-
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Form.Item label="Phone" name="phone" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="Your Phone Number" />
@@ -65,16 +74,16 @@ const FormContact = () => {
                 <Input placeholder="Your Email" />
             </Form.Item>
         </div>
-        <Form.Item label="Catogery" name="catogery">
+        <Form.Item label="Category" name="category">
             <CatogerySelection />
         </Form.Item>
-        <Form.Item label="Quantity of ordered" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+        <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
-        <Form.Item label="Standard requirements" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+        <Form.Item label="Standard requirements" name="requirements" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
-        <Form.Item label="Delivery port location" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+        <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
 
