@@ -16,6 +16,15 @@ const options: SelectProps['options'] = [
     { label: 'Orange', value: 'Orange' },
 ];
 
+const selectBefore = (
+    <Select defaultValue="Mr">
+        <Option value="Mr">Mr.</Option>
+        <Option value="Ms">Ms.</Option>
+        <Option value="Mrs">Mrs.</Option>
+        );
+    </Select>
+);
+
 
 const handleChange = (value: string[]) => {
     console.log(`selected ${value}`);
@@ -39,15 +48,15 @@ const CatogerySelection: React.FC = () => (
 
 const FormContact = () => {
     return (<Form layout="vertical">
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Form.Item label="Name" name="name" style={{ flex: 1, marginRight: '1rem' }}>
-                <Input placeholder="Your Name" />
-            </Form.Item>
-            <Form.Item label="Company" name="company" style={{ flex: 1, marginRight: '1rem' }}>
-                <Input placeholder="Your Company" />
-            </Form.Item>
 
-        </div>
+        <Form.Item label="Name" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+            <Input addonBefore={selectBefore} defaultValue="Your Name" />
+        </Form.Item>
+        <Form.Item label="Company" name="company" style={{ flex: 1, marginRight: '1rem' }}>
+            <Input placeholder="Your Company" />
+        </Form.Item>
+
+
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Form.Item label="Phone" name="phone" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="Your Phone Number" />
@@ -59,7 +68,7 @@ const FormContact = () => {
         <Form.Item label="Catogery" name="catogery">
             <CatogerySelection />
         </Form.Item>
-        <Form.Item label="Quantity of product ordered" name="name" style={{ flex: 1, marginRight: '1rem' }}>
+        <Form.Item label="Quantity of ordered" name="name" style={{ flex: 1, marginRight: '1rem' }}>
             <Input placeholder="" />
         </Form.Item>
         <Form.Item label="Standard requirements" name="name" style={{ flex: 1, marginRight: '1rem' }}>
