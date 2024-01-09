@@ -1,9 +1,9 @@
 'use client'
-import { Row, Col, Layout } from 'antd';
+import { Row, Col, Layout, Button } from 'antd';
 import FormContact from '../component/form.contact';
 import { Content } from 'antd/es/layout/layout';
 import Link from 'next/link';
-import { StarFilled, PhoneOutlined, MailOutlined } from '@ant-design/icons';
+import { StarFilled, PhoneOutlined, MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
 
 const ContactPage = () => {
     return (
@@ -12,16 +12,22 @@ const ContactPage = () => {
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
                     <Col xs={24} sm={24} md={14}>
                         <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                            <div style={{ minWidth: '200px', width: '100%', maxWidth: '400px', zIndex: '2' }}>
+                            <div style={{ minWidth: '200px', width: '100%', maxWidth: '430px', zIndex: '2' }}>
                                 <h1 style={{ fontSize: '60px', fontWeight: '700', color: 'blue' }}>Contact Us</h1>
-                                <p style={{ fontSize: '24px', fontWeight: '300' }}>Please contact us if you would like to arrange a free 20-minute call. We will be delighted if we can consult to know your requirements exactly and suggest the best solutions in some industrial sectors: Iron and Steel Casting, Ground Mounting Screw, Rubber and Silicone, Extruded Aluminum, and Fabrication Service, made in Vietnam.</p>
+                                <p style={{ fontSize: '20px', fontWeight: '300' }}>Please contact us if you would like to arrange a free 20-minute call. We will be delighted if we can consult to know your requirements exactly and suggest the best solutions in some industrial sectors: Iron and Steel Casting, Ground Mounting Screw, Rubber and Silicone, Extruded Aluminum, and Fabrication Service, made in Vietnam.</p>
+                                <div style={{ border: 'dashed 1px blue', borderRadius: '8px', padding: '0 20px 0' }}>
+                                    <h3>COMPANY INFO</h3>
+                                    <p style={{ fontSize: '16px' }}><EnvironmentOutlined /> P. Hoàng Đạo Thúy, Trung Hòa Nhân Chính, Thanh Xuân, Hà Nội, Vietnam</p>
+                                    <p style={{ fontSize: '16px' }}><MailOutlined /> info@slmglobal.vn</p>
+                                </div>
                             </div>
                         </Content>
+
                         <div style={{ position: 'absolute', top: 0, right: 30, zIndex: '1' }}>
                             <img src="img/vietnam.png" alt="Image" style={{ maxWidth: '100%', height: '680px' }} />
                         </div>
                         <div style={{ position: 'absolute', top: 97, right: 240, zIndex: '3' }}>
-                            <StarFilled style={{ fontSize: '20px', color: 'orange' }} />
+                            <Link href="https://maps.app.goo.gl/Q4AAR2xs7yRA2kQT6"><StarFilled style={{ fontSize: '20px', color: 'orange' }} /></Link>
                         </div>
                     </Col>
 
