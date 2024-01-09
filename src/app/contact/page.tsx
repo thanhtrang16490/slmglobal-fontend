@@ -32,7 +32,7 @@ const ContactPage = () => {
                     </Col>
 
                     <Col xs={24} sm={24} md={8} style={{ border: 'solid 1px #0d0d0d0d', borderRadius: '8px', padding: '0 20px 0', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }}>
-                        <h1 style={{ color: 'blue', fontWeight: '300' }}>Get quote</h1>
+                        <h1 style={{ color: 'blue', fontWeight: '300' }}>Get Quotation</h1>
                         <FormContact />
                     </Col>
                 </Content>

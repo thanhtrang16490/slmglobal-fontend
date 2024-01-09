@@ -129,7 +129,7 @@ const FormContact = () => {
         </Form.Item>
         <Form.Item>
             <Button type="primary" htmlType="submit">
-                Quote Now
+                Send your RFQ
             </Button>
         </Form.Item>
     </Form>)
