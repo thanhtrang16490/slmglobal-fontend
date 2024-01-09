@@ -105,7 +105,7 @@ const FormContact = () => {
             <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="" />
             </Form.Item>
-            <Form.Item label="Technical drawings / Blueprint" name="location" style={{ flex: 1, marginRight: '1rem' }}>
+            <Form.Item label="Technical drawings" name="location" style={{ flex: 1, marginRight: '1rem' }}>
                 <Upload {...props}>
                     <Button icon={<UploadOutlined />}>Click to Upload</Button>
                 </Upload>

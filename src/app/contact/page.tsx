@@ -12,13 +12,21 @@ const ContactPage = () => {
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
                     <Col xs={24} sm={24} md={16}>
                         <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                            <div style={{ minWidth: '200px', width: '100%', maxWidth: '430px', zIndex: '2' }}>
+                            <div style={{ minWidth: '200px', width: '100%', maxWidth: '470px', zIndex: '2' }}>
                                 <h1 style={{ fontSize: '60px', fontWeight: '700', color: 'blue' }}>Contact Us</h1>
-                                <p style={{ fontSize: '20px', fontWeight: '300' }}>Please contact us if you would like to arrange a free 20-minute call. We will be delighted if we can consult to know your requirements exactly and suggest the best solutions in some industrial sectors: Iron and Steel Casting, Ground Mounting Screw, Rubber and Silicone, Extruded Aluminum, and Fabrication Service, made in Vietnam.</p>
+                                <p style={{ fontSize: '20px', fontWeight: '300', lineHeight: '1.4' }}>Please contact us if you would like to arrange a free 20-minute call. We will be delighted if we can consult to know your requirements exactly and suggest the best solutions in some industrial sectors: Iron and Steel Casting, Ground Mounting Screw, Rubber and Silicone, Extruded Aluminum, and Fabrication Service, made in Vietnam.</p>
                                 <div style={{ border: 'dashed 1px blue', borderRadius: '8px', padding: '0 20px 0' }}>
-                                    <h3>COMPANY INFO</h3>
-                                    <p style={{ fontSize: '16px' }}><EnvironmentOutlined /> P. Hoàng Đạo Thúy, Trung Hòa Nhân Chính, Thanh Xuân, Hà Nội, Vietnam</p>
-                                    <p style={{ fontSize: '16px' }}><MailOutlined /> info@slmglobal.vn</p>
+                                    <h3 style={{ color: 'blue' }}>COMPANY OFFICE CONTACT</h3>
+                                    <Row style={{ display: 'flex', alignItems: 'center', marginTop: '-15px' }}>
+                                        <Col ><EnvironmentOutlined style={{ fontSize: '18px', padding: '0px 10px 18px 0px' }} /> </Col>
+                                        <Col><p style={{ fontSize: '16px' }}> Diamond Flower Tower, Hoang Đao Thuy Street,<br />Thanh Xuân Dist, Hanoi City, Vietnam</p></Col>
+                                    </Row>
+                                    <Row style={{ display: 'flex', alignItems: 'center', marginTop: '-20px' }}>
+                                        <Col><MailOutlined style={{ fontSize: '18px', padding: '0px 10px 0px 0px' }} />  </Col>
+                                        <Col><p style={{ fontSize: '16px' }}>info@slmglobal.vn</p></Col>
+                                    </Row>
+
+
                                 </div>
                             </div>
                         </Content>
@@ -43,22 +51,22 @@ const ContactPage = () => {
                         <Col xs={24} sm={24} md={8}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>International Sale Manager: Tracy Dang (Ms.)</h3>
-                                <p><PhoneOutlined />   Whatsapp: <Link style={{ color: 'white' }} href="tel:+84989837143">+84 (989) 837-143</Link></p>
-                                <p><MailOutlined /> Email: <Link style={{ color: 'white' }} href="mailto:Tracy@slmglobal.vn">Tracy@slmglobal.vn</Link></p>
+                                <p><PhoneOutlined />   <Link style={{ color: 'white' }} href="https://wa.me/84989040651"> Whatsapp: +84 (989) 040-651</Link></p>
+                                <p><MailOutlined />  <Link style={{ color: 'white' }} href="mailto:Tracy@slmglobal.vn">Email: Tracy@slmglobal.vn</Link></p>
                             </div>
                         </Col>
                         <Col xs={24} sm={24} md={8}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>Product Director: Daniel Nguyen (Mr.)</h3>
-                                <p><PhoneOutlined />   Whatsapp:  <Link style={{ color: 'white' }} href="tel:+84979983355">+84 (979) 983-355</Link></p>
-                                <p><MailOutlined /> Email: <Link style={{ color: 'white' }} href="mailto:Daniel@slmglobal.vn">Daniel@slmglobal.vn</Link></p>
+                                <p><PhoneOutlined />    <Link style={{ color: 'white' }} href='https://wa.me/84979983355' target="_blank" > Whatsapp: +84 (979) 983-355</Link></p>
+                                <p><MailOutlined />  <Link style={{ color: 'white' }} href="mailto:Daniel@slmglobal.vn">Email: Daniel@slmglobal.vn</Link></p>
                             </div>
                         </Col>
                         <Col xs={24} sm={24} md={8}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>Technical Manager: Victor Nguyen (Mr.)</h3>
-                                <p><PhoneOutlined />   Whatsapp: <Link style={{ color: 'white' }} href="tel:+84969862033">+84 (969) 862-033</Link></p>
-                                <p><MailOutlined />  Email: <Link style={{ color: 'white' }} href="mailto:Victor@slmglobal.vn">Victor@slmglobal.vn</Link></p>
+                                <p><PhoneOutlined />    <Link style={{ color: 'white' }} href="https://wa.me/84969862033">Whatsapp: +84 (969) 862-033</Link></p>
+                                <p><MailOutlined />   <Link style={{ color: 'white' }} href="mailto:Victor@slmglobal.vn">Email: Victor@slmglobal.vn</Link></p>
                             </div>
                         </Col>
                     </Row>
