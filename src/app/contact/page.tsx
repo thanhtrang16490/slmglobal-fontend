@@ -10,7 +10,7 @@ const ContactPage = () => {
         <Layout>
             <Row gutter={50} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', background: 'white' }}>
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
-                    <Col xs={24} sm={24} md={14}>
+                    <Col xs={24} sm={24} md={16}>
                         <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
                             <div style={{ minWidth: '200px', width: '100%', maxWidth: '430px', zIndex: '2' }}>
                                 <h1 style={{ fontSize: '60px', fontWeight: '700', color: 'blue' }}>Contact Us</h1>
@@ -31,7 +31,7 @@ const ContactPage = () => {
                         </div>
                     </Col>
 
-                    <Col xs={24} sm={24} md={10}>
+                    <Col xs={24} sm={24} md={8}>
                         <h1 style={{ color: 'blue', fontWeight: '300' }}>Get quote</h1>
                         <FormContact />
                     </Col>
