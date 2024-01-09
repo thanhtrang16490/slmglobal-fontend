@@ -24,15 +24,19 @@ const AluminumPage = async () => {
   const products = await getData();
   // console.log(products);
   return (
-    <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Row gutter={3}>
-        {products.data.map((product: Product) => (
-          <Col key={product.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
-            <ProductCard product={product} />
-          </Col>
-        ))}
-      </Row>
-    </Layout>
+    <>
+
+      <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Row gutter={3}>
+          {products.data.map((product: Product) => (
+            <Col key={product.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
+              <ProductCard product={product} />
+            </Col>
+          ))}
+        </Row>
+      </Layout>
+    </>
+
   );
 }
 
