@@ -5,6 +5,7 @@ import { Layout } from 'antd'
 import ChatBoxModule from './component/chat.box'
 import AnalyticsGoogle from './component/analytics.google'
 import Head from 'next/head'
+import NProgressWrapper from '@/lib/nprogress.wrapper'
 
 export const metadata: Metadata = {
   title: 'SLM GLOBAL',
@@ -31,13 +32,15 @@ export default function RootLayout({
       <AnalyticsGoogle />
       <body style={{ margin: '0' }}>
         <StyledComponentsRegistry>
-          <Layout>
-            <TopMenuComponent />
-            <Layout style={{ marginTop: '116px' }}>
-              {children}
+          <NProgressWrapper>
+            <Layout>
+              <TopMenuComponent />
+              <Layout style={{ marginTop: '116px' }}>
+                {children}
+              </Layout>
             </Layout>
-          </Layout>
-          <ChatBoxModule />
+            <ChatBoxModule />
+          </NProgressWrapper>
         </StyledComponentsRegistry>
       </body>
     </html >
