@@ -1,5 +1,5 @@
 'use client'
-import { Carousel } from "antd";
+// import { Carousel } from "antd";
 import SlideModule from "./slide.module";
 import FooterModule from "./footer";
 

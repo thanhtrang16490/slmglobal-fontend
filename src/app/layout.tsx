@@ -2,12 +2,9 @@ import type { Metadata } from 'next'
 import StyledComponentsRegistry from '@/lib/antd.registry'
 import TopMenuComponent from './component/top.menu'
 import { Layout } from 'antd'
-
 import ChatBoxModule from './component/chat.box'
 import AnalyticsGoogle from './component/analytics.google'
-import Footer from './component/footer'
-import FooterModule from './component/footer'
-
+import Head from 'next/head'
 
 export const metadata: Metadata = {
   title: 'SLM GLOBAL',
@@ -21,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link
           rel="apple-touch-icon"
           href="/apple-icon?<generated>"
@@ -29,22 +26,20 @@ export default function RootLayout({
           sizes="<generated>"
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
-      <AnalyticsGoogle />
-      <body style={{ margin: 0, padding: 0 }}>
 
+      </Head>
+      <AnalyticsGoogle />
+      <body>
         <StyledComponentsRegistry>
           <Layout>
             <TopMenuComponent />
             <Layout style={{ marginTop: '116px' }}>
               {children}
             </Layout>
-
           </Layout>
           <ChatBoxModule />
         </StyledComponentsRegistry>
-
       </body>
-    </html>
+    </html >
   )
 }
