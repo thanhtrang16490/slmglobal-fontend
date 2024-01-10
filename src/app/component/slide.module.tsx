@@ -43,7 +43,7 @@ const SlideModule = ({ backgroundImage, headerTitle, id }: SlideModuleProps) => 
                 }}>
                 </Content>
                 <Content style={{ position: 'absolute', bottom: '40px', left: '50%', translate: '-50% -50px', zIndex: 2, }}>
-                    <Content style={{ display: 'flex', }}>
+                    <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
                         <Link href={`/${id}`}><Button block style={{ width: '246px', margin: '10px', height: '40px' }}>Explore Inventory</Button></Link>
                         <Link href={'/contact'}><Button ghost style={{ width: '246px', margin: '10px', height: '40px' }}>Get free quote</Button></Link>
                     </Content>
