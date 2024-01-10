@@ -46,6 +46,18 @@ const selectBefore = (
     </Select>
 );
 
+const selectAfter = (
+    <Select defaultValue="piece">
+        <Option value="piece">Piece</Option>
+        <Option value="meter ">Meter</Option>
+        <Option value="inch">Inch</Option>
+        <Option value="kilogram">Kilogram</Option>
+        <Option value="pound ">Pound</Option>
+        );
+    </Select>
+);
+
+
 
 const handleChange = (value: string[]) => {
     console.log(`selected ${value}`);
@@ -102,10 +114,10 @@ const FormContact = () => {
             <CatogerySelection />
         </Form.Item>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Form.Item label="Quantity of ordered" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
-                <Input placeholder="" />
+            <Form.Item   label="Quantity" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
+                <Input addonAfter={selectAfter} placeholder="" />
             </Form.Item>
-            <Form.Item label="Technical drawings" name="location" style={{ flex: 1, marginRight: '1rem' }}>
+            <Form.Item label="Blueprint" name="blueprint" style={{ flex: 1, marginRight: '1rem' }}>
                 <Upload {...props}>
                     <Button icon={<UploadOutlined />}>Click to Upload</Button>
                 </Upload>
@@ -113,9 +125,7 @@ const FormContact = () => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
 
-            <Form.Item label="Standard requirements" name="requirements" style={{ flex: 1, marginRight: '1rem' }}>
-                <Input placeholder="" />
-            </Form.Item>
+          
             <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="" />
             </Form.Item>

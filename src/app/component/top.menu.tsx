@@ -6,6 +6,7 @@ import { FilePdfOutlined, InfoCircleFilled, AlibabaOutlined } from '@ant-design/
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Content } from 'antd/es/layout/layout';
 
 const topMenuItems: MenuProps['items'] = [
     {
@@ -100,30 +101,25 @@ const TopMenuComponent: React.FC = () => {
 
     return (
         <div style={{ position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
-            <Flex justify='space-around' align='center' style={{ backgroundColor: '#000' }} >
-                <Button shape="round" style={{ backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ color: '#fff' }} /> <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'>Find us on Alibaba</Link></Button>
-                <div></div>
-                <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ minWidth: 0, flex: "auto", maxWidth: '330px', lineHeight: '40px', backgroundColor: '#000' }} theme='dark' />
-            </Flex>
+            <Content style={{ backgroundColor: '#17274f' }}>
+                <Flex justify='space-between' align='center' style={{ maxWidth: '1440px', margin: 'auto' }}>
+                    <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'> <Button shape="round" style={{ display: 'flex', alignItems: 'center', color: '#fff', backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ fontSize: '28px', color: '#fff' }} /> Find us on Alibaba</Button></Link>
+                    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} theme='dark' />
+                </Flex>
+            </Content>
 
-            <div style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
-                <Flex justify='space-evenly' align='center' >
+            <Content style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
+                <Flex justify='space-between' align='center' style={{ maxWidth: '1440px', margin: 'auto' }}>
                     <Flex align='center'>
-
                         <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
-                        style={{ justifyContent: 'center', background: 'none', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
-                    <Flex justify='space-evenly' gap="middle" align='center'>
-
-
-                        <Button shape="round" ><FilePdfOutlined /> <Link target='_blank' rel='noopener noreferrer' href='https://indd.adobe.com/view/156a9b15-33b4-46f5-a713-2c71fc8fafbd'>Profile</Link></Button>
-
+                        style={{ color: '#17274f', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
+                    <Flex justify='space-between' gap="middle" align='center'>
+                        <Link target='_blank' rel='noopener noreferrer' href='https://indd.adobe.com/view/156a9b15-33b4-46f5-a713-2c71fc8fafbd'> <Button danger shape="round" ><FilePdfOutlined />Company Profile</Button></Link>
                     </Flex>
                 </Flex>
-
-
-            </div>
+            </Content>
         </div>
     );
 };

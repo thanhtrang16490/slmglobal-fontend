@@ -25,7 +25,7 @@ const BlogPage = async () => {
     <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Row gutter={3}>
         {posts.data.map((post: Post) => (
-          <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={4}>
+          <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
             <PostCard post={post} />
           </Col>
         ))}

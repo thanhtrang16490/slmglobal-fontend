@@ -7,7 +7,7 @@ const AboutUsPage: React.FC = () => {
 
     return (
         <Layout >
-            <Content style={{ background: '#115cfa' }}>
+            <Content style={{ background: '#17274f' }}>
                 <Content style={{ margin: 'auto', width: '100%', maxWidth: '1440px' }} >
                     <div style={{ margin: '0 auto', display: 'flex', alignItems: 'center', minHeight: '500px', maxWidth: '800px' }}>
                         <Typography.Title style={{ color: ' white', fontSize: '28px', fontWeight: 200, padding: '0 30px', textAlign: 'center', lineHeight: '1.6' }}>
@@ -19,7 +19,7 @@ const AboutUsPage: React.FC = () => {
             <Content>
                 <Content style={{ margin: 'auto', width: '100%', maxWidth: '1440px' }} >
 
-                    <Typography.Title style={{ paddingTop: '50px', textTransform: 'uppercase', color: '#0016b3', fontSize: '38px', fontWeight: 700, padding: '0 30px' }}>
+                    <Typography.Title style={{ paddingTop: '50px', textTransform: 'uppercase', color: '#17274f', fontSize: '38px', fontWeight: 700, padding: '0 30px' }}>
                         Core Values
                     </Typography.Title>
 
@@ -30,7 +30,7 @@ const AboutUsPage: React.FC = () => {
                 </Content>
                 <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
-                        <p style={{ fontSize: '25px', color: '#0016b3' }}>
+                        <p style={{ fontSize: '25px', color: '#17274f' }}>
                             Creativity and Innovation
                         </p>
                     </Col>
@@ -44,7 +44,7 @@ const AboutUsPage: React.FC = () => {
 
                 <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
-                        <p style={{ fontSize: '25px', color: '#0016b3' }}>
+                        <p style={{ fontSize: '25px', color: '#17274f' }}>
                             Quality and Reliability
 
                         </p>
@@ -58,7 +58,7 @@ const AboutUsPage: React.FC = () => {
                 </Row>
                 <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
-                        <p style={{ fontSize: '25px', color: '#0016b3' }}>
+                        <p style={{ fontSize: '25px', color: '#17274f' }}>
                             Devotion and Consulting
                         </p>
                     </Col>
@@ -71,7 +71,7 @@ const AboutUsPage: React.FC = () => {
                 </Row>
                 <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
-                        <p style={{ fontSize: '25px', color: '#0016b3' }}>
+                        <p style={{ fontSize: '25px', color: '#17274f' }}>
                             Sustainability and Environment
                         </p>
                     </Col>
@@ -84,7 +84,7 @@ const AboutUsPage: React.FC = () => {
                 </Row>
                 <Row gutter={16} style={{ margin: 'auto', width: '100%', maxWidth: '1440px', padding: '0 30px' }}>
                     <Col xs={24} sm={24} md={6} lg={5} xl={5} style={{ flex: '20%', alignItems: 'center' }}>
-                        <p style={{ fontSize: '25px', color: '#0016b3' }}>
+                        <p style={{ fontSize: '25px', color: '#17274f' }}>
                             Cooperation and Relationship Building
                         </p>
                     </Col>

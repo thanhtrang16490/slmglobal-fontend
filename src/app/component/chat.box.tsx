@@ -11,9 +11,9 @@ const ChatBoxModule: React.FC = () => (
             type="primary"
             style={{ right: 54 }}
             icon={<CustomerServiceOutlined />}
-
+            tooltip={<div>Customer service center</div>}
         >
-            <FloatButton tooltip={<div>Customer service center</div>} href='tel:+84989040651' target="_blank" icon={<PhoneOutlined />} />
+            <FloatButton tooltip={<div>Phone number</div>} href='tel:+84989040651' target="_blank" icon={<PhoneOutlined />} />
             <FloatButton tooltip={<div>Chat with me via whatsapp</div>} href='https://wa.me/84989040651' target="_blank" icon={<WhatsAppOutlined />} />
         </FloatButton.Group>
     </>
