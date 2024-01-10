@@ -8,7 +8,7 @@ type Post = {
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}blogs?populate=*`, {
-    next: { revalidate: 3600 }
+    next: { revalidate: 86400 }
   });
   if (!res.ok) {
     throw new Error(res.statusText);

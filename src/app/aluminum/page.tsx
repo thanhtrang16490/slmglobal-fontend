@@ -10,7 +10,7 @@ type Product = {
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}/products?filters[category][$eq]=Alumilumn%20Frame&populate=*`, {
-    next: { revalidate: 3600 }
+    next: { revalidate: 86400 }
   });
   if (!res.ok) {
     throw new Error(res.statusText);

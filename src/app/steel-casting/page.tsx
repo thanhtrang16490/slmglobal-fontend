@@ -8,7 +8,7 @@ type Product = {
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Iron%20Steel%20Casting&populate=*`, {
-    next: { revalidate: 3600 }
+    next: { revalidate: 86400 }
   });
   if (!res.ok) {
     throw new Error(res.statusText);
