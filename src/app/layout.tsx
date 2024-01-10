@@ -29,7 +29,7 @@ export default function RootLayout({
 
       </Head>
       <AnalyticsGoogle />
-      <body>
+      <body style={{ margin: '0' }}>
         <StyledComponentsRegistry>
           <Layout>
             <TopMenuComponent />
