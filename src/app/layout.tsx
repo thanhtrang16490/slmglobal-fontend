@@ -4,7 +4,7 @@ import TopMenuComponent from './component/top.menu'
 import { Layout } from 'antd'
 import ChatBoxModule from './component/chat.box'
 import AnalyticsGoogle from './component/analytics.google'
-import Head from 'next/head'
+
 import NProgressWrapper from '@/lib/nprogress.wrapper'
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link
           rel="apple-touch-icon"
           href="/apple-icon?<generated>"
@@ -28,7 +28,7 @@ export default function RootLayout({
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
-      </Head>
+      </head>
       <AnalyticsGoogle />
       <body style={{ margin: '0' }}>
         <StyledComponentsRegistry>
