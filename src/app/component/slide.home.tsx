@@ -1,6 +1,7 @@
 'use client'
 import { Carousel } from "antd";
 import SlideModule from "./slide.module";
+import FooterModule from "./footer";
 
 
 
@@ -8,7 +9,7 @@ import SlideModule from "./slide.module";
 const SlideHomeModule = () => {
 
     return (
-        <div style={{ marginTop: '-116px' }}>
+        <div style={{ marginTop: '-116px', position: 'relative' }}>
             {/* <Carousel dotPosition="left" autoplay draggable> */}
             <SlideModule backgroundImage='/img/header-1.jpg' headerTitle='Renewable Energy Products' id='solar' />
             <SlideModule backgroundImage='/img/header-2.jpg' headerTitle='Mounting Screw Products' id='screw' />
@@ -20,6 +21,7 @@ const SlideHomeModule = () => {
             <SlideModule backgroundImage='/img/header-8.jpg' headerTitle='Anam Cau - Palm Plate' id='palm-plate' />
             <SlideModule backgroundImage='/img/header-9.jpg' headerTitle='Grassgreen Straw Reed' id='grass-straw' />
             {/* </Carousel> */}
+            <FooterModule />
         </div>
 
     )
