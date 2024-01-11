@@ -24,8 +24,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                         <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                             <Image
                                 style={{ padding: '8px' }}
-                                layout="fill"
-                                objectFit="cover"
+                                fill={true}
+                                loading="lazy"
+                                sizes='(max-width: 600px) 500px, (max-width: 1200px) 300px, 500px'
                                 src={
                                     product.attributes.feature_image.data && product.attributes.feature_image.data.attributes.formats
                                         ? product.attributes.feature_image.data.attributes.formats.medium
