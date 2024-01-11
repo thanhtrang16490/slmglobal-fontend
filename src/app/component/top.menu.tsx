@@ -44,7 +44,7 @@ const mainMenuItems: MenuProps['items'] = [
     },
     {
         label:
-            <Link href='/screw' >Screw</Link>,
+            <Link href='/screw' >Ground Anchor</Link>,
         key: 'screw',
     },
     {

@@ -26,7 +26,7 @@ const props: UploadProps = {
 
 const options: SelectProps['options'] = [
     { label: 'Renewable Energy', value: 'renewable-energy' },
-    { label: 'Mounting Screw', value: 'mounting-screw' },
+    { label: 'Ground Anchor', value: 'ground-anchor' },
     { label: 'Aluminum Frame', value: 'alumilum-frame' },
     { label: 'Iron Steel Casting', value: 'iron-steel-casting' },
     { label: 'Moulding Extruded Rubber', value: 'moulding-extruded-rubber' },
@@ -71,7 +71,7 @@ const CatogerySelection: React.FC = () => (
             allowClear
             style={{ width: '100%' }}
             placeholder="Please select"
-            defaultValue={['mounting-screw', 'renewable-energy']}
+            defaultValue={['ground-anchor', 'renewable-energy']}
             onChange={handleChange}
             options={options}
         />
@@ -114,7 +114,7 @@ const FormContact = () => {
             <CatogerySelection />
         </Form.Item>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Form.Item   label="Quantity" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
+            <Form.Item label="Quantity" name="quantity" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input addonAfter={selectAfter} placeholder="" />
             </Form.Item>
             <Form.Item label="Blueprint" name="blueprint" style={{ flex: 1, marginRight: '1rem' }}>
@@ -125,7 +125,7 @@ const FormContact = () => {
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
 
-          
+
             <Form.Item label="Delivery port location" name="location" style={{ flex: 1, marginRight: '1rem' }}>
                 <Input placeholder="" />
             </Form.Item>

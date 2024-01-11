@@ -9,7 +9,7 @@ import NProgressWrapper from '@/lib/nprogress.wrapper'
 
 export const metadata: Metadata = {
   title: 'SLM GLOBAL',
-  description: 'Welcome to Vietnam! SLM is appreciated to hear you and offer the best solution for Iron Casting,Ground Screw,Rubber,Fabrication Service, and whatever you need.',
+  description: 'Welcome to Vietnam! SLM is appreciated to hear you and offer the best solution for Iron Casting,Ground Anchor,Rubber,Fabrication Service, and whatever you need.',
 }
 
 export default function RootLayout({

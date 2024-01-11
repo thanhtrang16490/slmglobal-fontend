@@ -12,7 +12,7 @@ const SlideHomeModule = () => {
         <div style={{ marginTop: '-116px', position: 'relative' }}>
             {/* <Carousel dotPosition="left" autoplay draggable> */}
             <SlideModule backgroundImage='/img/header-1.jpg' headerTitle='Renewable Energy Products' id='solar' />
-            <SlideModule backgroundImage='/img/header-2.jpg' headerTitle='Mounting Screw Products' id='screw' />
+            <SlideModule backgroundImage='/img/header-2.jpg' headerTitle='Ground Anchor Products' id='screw' />
             <SlideModule backgroundImage='/img/header-4.jpg' headerTitle='Aluminum Frame Products' id='aluminum' />
             <SlideModule backgroundImage='/img/header-3.jpg' headerTitle='Iron Steel Casting Products' id='steel-casting' />
             <SlideModule backgroundImage='/img/header-5.jpg' headerTitle='Moulded_Extruded Rubber Products' id='rubber' />
