@@ -111,7 +111,7 @@ const TopMenuComponent: React.FC = () => {
             <Content style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1440px', margin: 'auto' }}>
                     <Flex align='center'>
-                        <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority /></Link>
+                        <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
                         style={{ color: '#17274f', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
