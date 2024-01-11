@@ -26,7 +26,12 @@ const BrassValesPage = async () => {
   const products = await getData();
   return (
     <>
-      <HeaderProductCatogeries hpctitle='Brass Cales & Tapes' hpcsubtitle='Discover new and trending products' hpccatogeries='' />
+      <HeaderProductCatogeries
+        hpctitle='Brass Cales & Tapes'
+        hpcsubtitle='Discover new and trending products'
+        hpccatogeries=''
+        hpcbackground='img/renewable-energy.jpg' />
+
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>
         <Row gutter={3}>

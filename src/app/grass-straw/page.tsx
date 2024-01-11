@@ -30,7 +30,9 @@ const GrassStrawPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Grassgreen Straw Reed'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='' />
+        hpccatogeries=''
+        hpcbackground='img/renewable-energy.jpg'
+      />
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h1 >Recommend products</h1>
         <Row gutter={3}>

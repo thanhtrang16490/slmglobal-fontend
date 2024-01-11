@@ -32,7 +32,9 @@ const PalmPlatePage = async () => {
       <HeaderProductCatogeries
         hpctitle='Anam Cau - Palm Plate'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='' />
+        hpccatogeries=''
+        hpcbackground='img/renewable-energy.jpg'
+      />
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>

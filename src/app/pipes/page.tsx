@@ -30,7 +30,9 @@ const PipesPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Plastic Pipe'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='HDPE pipes / PPR pipes / uPVC pipes' />
+        hpccatogeries='HDPE pipes / PPR pipes / uPVC pipes'
+        hpcbackground='img/renewable-energy.jpg'
+      />
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>

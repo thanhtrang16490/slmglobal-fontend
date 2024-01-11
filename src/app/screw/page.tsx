@@ -30,7 +30,9 @@ const ScrewPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Ground Anchor'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='Thread Screw / Helical screw' />
+        hpccatogeries='Thread Screw / Helical screw'
+        hpcbackground='img/renewable-energy.jpg'
+      />
 
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

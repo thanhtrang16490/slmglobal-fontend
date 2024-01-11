@@ -31,7 +31,9 @@ const SolarPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Renewable Energy'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='SINGLE PHASE ON GRID SYSTEM / Single phase hybrid system / THREE PHASES ON GRID SYSTEM / THREE phases hybrid system' />
+        hpccatogeries='SINGLE PHASE ON GRID SYSTEM / Single phase hybrid system / THREE PHASES ON GRID SYSTEM / THREE phases hybrid system'
+        hpcbackground='img/renewable-energy.jpg'
+      />
 
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

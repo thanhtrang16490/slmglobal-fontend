@@ -4,17 +4,18 @@ import { Content } from "antd/es/layout/layout";
 import Image from "next/image";
 
 interface HeaderProductCatogeriesProps {
+    hpcbackground: string;
     hpctitle?: string;
     hpcsubtitle: string;
     hpccatogeries?: string;
 }
 
 
-const HeaderProductCatogeries = ({ hpctitle, hpcsubtitle, hpccatogeries }: HeaderProductCatogeriesProps) => {
+const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, hpccatogeries }: HeaderProductCatogeriesProps) => {
 
     return (
         <Content style={{ width: '100%', position: 'relative', height: '550px', marginTop: '50px' }}>
-            <Content style={{ backgroundColor: 'rgba(0,0,0,.3)', width: '100%', height: '240px', textAlign: "center", backgroundImage: `url('img/renewable-energy.jpg')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', left: '50%', position: 'absolute', translate: '-50% -50px' }}>
+            <Content style={{ backgroundColor: 'rgba(0,0,0,.3)', width: '100%', height: '240px', textAlign: "center", backgroundImage: `url('${hpcbackground}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', left: '50%', position: 'absolute', translate: '-50% -50px' }}>
                 <div style={{ backgroundColor: 'rgba(0,0,0,.3)', width: '100%', height: '100%', position: 'absolute' }}>
                 </div>
                 <div style={{ color: 'white', zIndex: '99', position: 'absolute', left: '50%', translate: '-50% 10px' }}>

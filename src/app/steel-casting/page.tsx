@@ -28,7 +28,10 @@ const SteelCasting = async () => {
       <HeaderProductCatogeries
         hpctitle='Iron Steel Casting'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='iron casting / Steel casting / Stainless steel casting' />
+        hpccatogeries='iron casting / Steel casting / Stainless steel casting'
+        hpcbackground='img/casting.jpg'
+      />
+
 
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
