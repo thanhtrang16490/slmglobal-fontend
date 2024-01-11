@@ -27,10 +27,11 @@ const HeaderProductCatogeries = ({ hpctitle, hpcsubtitle, hpccatogeries }: Heade
             </Content>
             <Content style={{ height: '200px', width: '1200%', maxWidth: '1200px', background: 'white', borderRadius: '8px', position: 'absolute', top: '400px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                 <div >
-                    <Carousel autoplay>
-                        <Image style={{ borderRadius: '8px' }} src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' />
-                        <Image style={{ borderRadius: '8px' }} src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' />
-                        <Image style={{ borderRadius: '8px' }} src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' />
+                    <Carousel autoplay style={{ borderRadius: '8px', overflow: 'hidden' }}>
+                        <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
+                        <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' />
+                        <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' />
+
                     </Carousel>
 
                 </div>

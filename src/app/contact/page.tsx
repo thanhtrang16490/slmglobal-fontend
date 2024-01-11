@@ -11,12 +11,12 @@ const ContactPage = () => {
         <Layout >
             <Row gutter={30} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', paddingTop: '20px' }}>
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
-                    <Col xs={24} sm={24} md={16}>
+                    <Col xs={24} sm={24} md={16} >
                         <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
                             <div style={{ minWidth: '200px', width: '100%', maxWidth: '470px', zIndex: '2' }}>
                                 <h1 style={{ fontSize: '60px', fontWeight: '700', color: '#17274f' }}>Contact Us</h1>
                                 <p style={{ fontSize: '20px', fontWeight: '300', lineHeight: '1.4' }}>Please contact us if you would like to arrange a free 20-minutes call. We will be delighted if we can consult to know your requirements exactly and suggest the best solutions in some industrial sectors: Iron and Steel Casting, Ground Mounting Screw, Rubber and Silicone, Extruded Aluminum, and Fabrication Service, made in Vietnam.</p>
-                                <div style={{ border: 'dashed 1px #17274f', borderRadius: '8px', padding: '0 20px 0' }}>
+                                <div style={{ border: 'dashed 1px #17274f', borderRadius: '8px', padding: '0 20px 0', margin: '0 10px 0' }}>
                                     <h3 style={{ color: '#17274f' }}>COMPANY OFFICE CONTACT</h3>
                                     <Row style={{ display: 'flex', alignItems: 'center', margin: '-15px 0 -10px' }}>
                                         <Col ><HomeOutlined style={{ fontSize: '18px', padding: '0px 10px 18px 0px' }} /> </Col>
@@ -50,24 +50,24 @@ const ContactPage = () => {
                     </Col>
                 </Content>
             </Row>
-            <Row style={{ zIndex: '99', marginTop: '20px' }}>
+            <Row style={{ zIndex: '99', marginTop: '10px', margin: '0 10px' }}>
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto' }}>
-                    <Row gutter={30} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Col xs={24} sm={24} md={8}>
+                    <Row gutter={20} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <Col xs={24} sm={24} md={8} style={{ padding: '10px' }}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>International Sale Manager: Tracy Dang (Ms.)</h3>
                                 <p><PhoneOutlined />   <Link style={{ color: 'white' }} href="https://wa.me/84989040651"> Whatsapp: +84 (989) 040-651</Link></p>
                                 <p><MailOutlined />  <Link style={{ color: 'white' }} href="mailto:Tracy@slmglobal.vn">Email: Tracy@slmglobal.vn</Link></p>
                             </div>
                         </Col>
-                        <Col xs={24} sm={24} md={8}>
+                        <Col xs={24} sm={24} md={8} style={{ padding: '10px' }}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>Product Director: Daniel Nguyen (Mr.)</h3>
                                 <p><PhoneOutlined />    <Link style={{ color: 'white' }} href='https://wa.me/84979983355' target="_blank" > Whatsapp: +84 (979) 983-355</Link></p>
                                 <p><MailOutlined />  <Link style={{ color: 'white' }} href="mailto:Daniel@slmglobal.vn">Email: Daniel@slmglobal.vn</Link></p>
                             </div>
                         </Col>
-                        <Col xs={24} sm={24} md={8}>
+                        <Col xs={24} sm={24} md={8} style={{ padding: '10px' }}>
                             <div style={{ backgroundColor: '#2234ae', backgroundImage: ' linear-gradient(315deg, #2234ae 0%, #191714 74%)', color: 'white', borderRadius: '8px', padding: '10px 50px 10px' }}>
                                 <h3>Technical Manager: Victor Nguyen (Mr.)</h3>
                                 <p><PhoneOutlined />    <Link style={{ color: 'white' }} href="https://wa.me/84969862033">Whatsapp: +84 (969) 862-033</Link></p>
