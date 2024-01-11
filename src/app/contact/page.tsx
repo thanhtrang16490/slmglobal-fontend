@@ -9,7 +9,7 @@ import Image from 'next/image';
 const ContactPage = () => {
     return (
         <Layout >
-            <Row gutter={30} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between' }}>
+            <Row gutter={30} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', paddingTop: '20px' }}>
                 <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
                     <Col xs={24} sm={24} md={16}>
                         <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
