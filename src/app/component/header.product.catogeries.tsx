@@ -13,9 +13,11 @@ interface HeaderProductCatogeriesProps {
 
 
 
+
 const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, data }: HeaderProductCatogeriesProps) => {
 
     const width = 100 / data.length;
+
 
     return (
         <Content style={{ width: '100%', position: 'relative', height: '550px', marginTop: '50px' }}>
@@ -29,15 +31,18 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
             </Content>
             <Content style={{ height: '190px', width: '1200%', maxWidth: '1200px', background: 'white', borderRadius: '8px', position: 'absolute', top: '180px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                 <Row style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
-                    {data.map((item: string, index: number) => (
-                        <Col key={index} style={{ position: 'relative', width: `${width}%` }}>
-                            <div style={{ height: '120px', width: '120px', maxWidth: '1200px', background: '#dfdfdf', borderRadius: '50%', position: 'absolute', top: '70px', left: '50%', translate: '-50% -50px' }}>
-                            </div>
-                            <div style={{ position: 'absolute', top: '200px', left: '50%', translate: '-50% -50px' }}>
-                                {item.title}
-                            </div>
-                        </Col>
-                    ))}
+                    {data.map((item: string, index: number) => {
+
+                        return ((
+                            <Col key={index} style={{ position: 'relative', width: `${width}%` }}>
+                                <div style={{ height: '120px', width: '120px', maxWidth: '1200px', background: '#dfdfdf', borderRadius: '50%', position: 'absolute', top: '70px', left: '50%', translate: '-50% -50px' }}>
+                                </div>
+                                <div style={{ position: 'absolute', top: '200px', left: '50%', translate: '-50% -70px' }}>
+                                    <h5 style={{ textTransform: "uppercase", textAlign: 'center' }}>{item.title}</h5>
+                                </div>
+                            </Col>
+                        ))
+                    })}
                 </Row>
             </Content>
 

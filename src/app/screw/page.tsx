@@ -11,20 +11,14 @@ type Product = {
 
 const catogeries = [
   {
-    title: 'SINGLE PHASE ON GRID SYSTEM',
+    title: 'Helical ground anchor',
 
   },
   {
-    title: 'Single phase hybrid system',
+    title: 'Thread ground anchor',
 
   },
-  {
-    title: 'THREE PHASES ON GRID SYSTEM ',
 
-  },
-  {
-    title: 'THREE phases hybrid system'
-  },
 
 ]
 
@@ -42,7 +36,6 @@ const getData = async () => {
 
 const ScrewPage = async () => {
   const products = await getData();
-  // console.log(products);
   return (
     <>
       <HeaderProductCatogeries
