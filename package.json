@@ -15,18 +15,27 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
     "@apollo/client": "^3.8.8",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.4",
+    "@mui/material": "^5.15.4",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.12",
     "antd": "5.11.1",
     "graphql": "^16.8.1",
     "next": "14.0.2",
     "next-nprogress-bar": "^2.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.66.1"
+    "react-slick": "0.29.0",
+    "sass": "1.66.1",
+    "slick-carousel": "1.8.1",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
+    "@types/react-slick": "^0.23.13",
     "eslint": "8.53.0",
     "eslint-config-next": "14.0.2",
     "typescript": "5.2.2"
