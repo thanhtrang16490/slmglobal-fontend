@@ -3,6 +3,7 @@ import { Row, Col, Layout } from 'antd';
 import ProductCard from '../component/product.card';
 import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
+import ProductFooterModule from '../component/product.footer';
 type Product = {
   id: number;
 };
@@ -62,6 +63,7 @@ const PalmPlatePage = async () => {
           ))}
         </Row>
       </Layout>
+      <ProductFooterModule />
     </>
   );
 }
