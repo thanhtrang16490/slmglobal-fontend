@@ -8,7 +8,9 @@ type Product = {
 
 };
 
+const catogeries: any = [
 
+]
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Grass%20Green%20Straw&populate=*`, {
@@ -30,7 +32,7 @@ const GrassStrawPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Grassgreen Straw Reed'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries=''
+        data={catogeries}
         hpcbackground='img/renewable-energy.jpg'
       />
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

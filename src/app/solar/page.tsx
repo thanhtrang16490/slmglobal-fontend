@@ -8,7 +8,24 @@ type Product = {
 
 };
 
+const catogeries = [
+  {
+    title: 'SINGLE PHASE ON GRID SYSTEM',
 
+  },
+  {
+    title: 'Single phase hybrid system',
+
+  },
+  {
+    title: 'THREE PHASES ON GRID SYSTEM ',
+
+  },
+  {
+    title: 'THREE phases hybrid system'
+  },
+
+]
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Renewable%20Energy&populate=*`, {
@@ -24,17 +41,17 @@ const getData = async () => {
 
 const SolarPage = async () => {
   const products = await getData();
-  // console.log(products);
+
   return (
     <>
 
       <HeaderProductCatogeries
         hpctitle='Renewable Energy'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='SINGLE PHASE ON GRID SYSTEM / Single phase hybrid system / THREE PHASES ON GRID SYSTEM / THREE phases hybrid system'
+        data={catogeries}
+
         hpcbackground='img/renewable-energy.jpg'
       />
-
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>

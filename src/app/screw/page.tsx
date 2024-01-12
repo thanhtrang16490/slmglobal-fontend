@@ -5,10 +5,28 @@ import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
 type Product = {
   id: number;
-
 };
 
 
+
+const catogeries = [
+  {
+    title: 'SINGLE PHASE ON GRID SYSTEM',
+
+  },
+  {
+    title: 'Single phase hybrid system',
+
+  },
+  {
+    title: 'THREE PHASES ON GRID SYSTEM ',
+
+  },
+  {
+    title: 'THREE phases hybrid system'
+  },
+
+]
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Mounting%20Screw&populate=*`, {
@@ -30,7 +48,7 @@ const ScrewPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Ground Anchor'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='Thread Screw / Helical screw'
+        data={catogeries}
         hpcbackground='img/renewable-energy.jpg'
       />
 

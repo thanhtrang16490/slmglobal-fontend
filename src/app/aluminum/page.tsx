@@ -9,6 +9,24 @@ type Product = {
 };
 
 
+const catogeries = [
+  {
+    title: 'GROUND SOLUTION',
+  },
+  {
+    title: 'CAR PARK SOLUTION',
+  },
+  {
+    title: 'METAL ROOF SOLUTION',
+  },
+  {
+    title: 'FLAT ROOF SOLUTION '
+  },
+  {
+    title: 'SHAPED ALUMINUM'
+  },
+]
+
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}/products?filters[category][$eq]=Alumilumn%20Frame&populate=*`, {
@@ -22,6 +40,7 @@ const getData = async () => {
 }
 
 
+
 const AluminumPage = async () => {
   const products = await getData();
   // console.log(products);
@@ -30,7 +49,8 @@ const AluminumPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Aluminum Frame'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='GROUND SOLUTION / CARPORT SOLUTION / METAL ROOF SOLUTION / FLAT ROOF SOLUTION / SHAPED ALUMINUM'
+        data={catogeries}
+
         hpcbackground='img/renewable-energy.jpg'
       />
 

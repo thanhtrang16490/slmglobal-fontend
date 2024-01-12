@@ -10,6 +10,30 @@ type Product = {
 
 
 
+const catogeries: any = [
+  {
+    title: 'Phenolic plywood',
+
+  },
+  {
+    title: 'BIRCH plywood',
+
+  },
+  {
+    title: 'Melamine plywood',
+
+  },
+  {
+    title: 'Laminate plywood'
+  },
+  {
+    title: 'PVC plywood'
+  },
+  {
+    title: 'Furniture'
+  },
+]
+
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Plywood&populate=*`, {
     next: { revalidate: 86400 }
@@ -24,7 +48,7 @@ const getData = async () => {
 
 const WoodPage = async () => {
   const products = await getData();
-  // console.log(products);
+
   return (
     <>
 
@@ -32,7 +56,8 @@ const WoodPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Plywood & Furniture'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='Phenolic plywood / BIRCH plywood / Melamine plywood / Laminate plywood / veneer plywood / PVC plywood / Furniture'
+        data={catogeries}
+
         hpcbackground='img/plywood-furniture.jpg'
       />
 

@@ -5,9 +5,13 @@ import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
 type Product = {
   id: number;
-
 };
 
+
+
+const catogeries: any = [
+
+]
 
 
 const getData = async () => {
@@ -32,7 +36,7 @@ const PalmPlatePage = async () => {
       <HeaderProductCatogeries
         hpctitle='Anam Cau - Palm Plate'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries=''
+        data={catogeries}
         hpcbackground='img/renewable-energy.jpg'
       />
 

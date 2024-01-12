@@ -5,8 +5,24 @@ import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
 type Product = {
   id: number;
-
 };
+
+const catogeries = [
+  {
+    title: 'iron casting',
+
+  },
+  {
+    title: 'Steel casting',
+
+  },
+  {
+    title: 'Stainless steel casting',
+
+  },
+
+]
+
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Iron%20Steel%20Casting&populate=*`, {
@@ -28,7 +44,8 @@ const SteelCasting = async () => {
       <HeaderProductCatogeries
         hpctitle='Iron Steel Casting'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='iron casting / Steel casting / Stainless steel casting'
+        data={catogeries}
+
         hpcbackground='img/casting.jpg'
       />
 

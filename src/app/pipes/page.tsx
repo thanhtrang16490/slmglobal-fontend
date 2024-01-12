@@ -5,10 +5,19 @@ import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
 type Product = {
   id: number;
-
 };
 
-
+const catogeries = [
+  {
+    title: 'HDPE pipes',
+  },
+  {
+    title: 'PPR pipes',
+  },
+  {
+    title: 'uPVC pipes',
+  },
+]
 
 const getData = async () => {
   const res = await fetch(`${process.env.BACKEND_URL}products?filters[category][$eq]=Plastic%20Pipes&populate=*`, {
@@ -18,19 +27,18 @@ const getData = async () => {
     throw new Error(res.statusText);
   }
   return await res.json();
-
 }
-
 
 const PipesPage = async () => {
   const products = await getData();
-  // console.log(products);
+
   return (
     <>
       <HeaderProductCatogeries
         hpctitle='Plastic Pipe'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='HDPE pipes / PPR pipes / uPVC pipes'
+        data={catogeries}
+
         hpcbackground='img/renewable-energy.jpg'
       />
 

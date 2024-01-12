@@ -8,6 +8,9 @@ type Product = {
 
 };
 
+const catogeries: any = [
+
+]
 
 
 const getData = async () => {
@@ -24,12 +27,14 @@ const getData = async () => {
 
 const BrassValesPage = async () => {
   const products = await getData();
+
+
   return (
     <>
       <HeaderProductCatogeries
         hpctitle='Brass Cales & Tapes'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries=''
+        data={catogeries}
         hpcbackground='img/renewable-energy.jpg' />
 
       <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

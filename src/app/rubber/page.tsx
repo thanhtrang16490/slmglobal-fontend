@@ -5,9 +5,27 @@ import { Content } from 'antd/es/layout/layout';
 import HeaderProductCatogeries from '../component/header.product.catogeries';
 type Product = {
   id: number;
-
 };
 
+
+const catogeries: any = [
+  {
+    title: 'Extruded rubber',
+  },
+  {
+    title: 'COMPRESSION RUBBER',
+  },
+  {
+    title: 'TECHNICAL RUBBER',
+
+  },
+  {
+    title: 'silicone'
+  },
+  {
+    title: 'TAPE, EVA, FOARM, FILM'
+  },
+]
 
 
 const getData = async () => {
@@ -30,7 +48,8 @@ const RubberPage = async () => {
       <HeaderProductCatogeries
         hpctitle='Moulded_Extruded Rubber'
         hpcsubtitle='Discover new and trending products'
-        hpccatogeries='Extruded rubber / COMPRESSION RUBBER / TECHNICAL RUBBER / silicone / TAPE, EVA, FOARM, FILM'
+        data={catogeries}
+
         hpcbackground='img/renewable-energy.jpg'
       />
 
