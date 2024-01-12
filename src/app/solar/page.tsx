@@ -24,7 +24,9 @@ const catogeries = [
   {
     title: 'THREE phases hybrid system'
   },
-
+  {
+    title: 'Accressories'
+  },
 ]
 
 const getData = async () => {
@@ -53,7 +55,7 @@ const SolarPage = async () => {
         hpcbackground='img/renewable-energy.jpg'
       />
 
-      <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>
         <Row gutter={3}>
           {products.data.map((product: Product) => (

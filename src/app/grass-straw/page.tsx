@@ -35,7 +35,7 @@ const GrassStrawPage = async () => {
         data={catogeries}
         hpcbackground='img/renewable-energy.jpg'
       />
-      <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h1 >Recommend products</h1>
         <Row gutter={3}>
 

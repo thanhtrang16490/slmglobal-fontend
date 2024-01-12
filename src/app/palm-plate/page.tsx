@@ -10,6 +10,18 @@ type Product = {
 
 
 const catogeries: any = [
+  {
+    title: 'PALM LEAF PLATES',
+
+  },
+  {
+    title: 'PALM LEAF BOWLS',
+
+  },
+  {
+    title: 'PALM LEAF TRAYS',
+
+  },
 
 ]
 
@@ -40,7 +52,7 @@ const PalmPlatePage = async () => {
         hpcbackground='img/renewable-energy.jpg'
       />
 
-      <Layout style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>
         <Row gutter={3}>
           {products.data.map((product: Product) => (

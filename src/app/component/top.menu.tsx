@@ -102,14 +102,14 @@ const TopMenuComponent: React.FC = () => {
     return (
         <div style={{ position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
             <Content style={{ backgroundColor: '#17274f' }}>
-                <Flex justify='space-between' align='center' style={{ maxWidth: '1440px', margin: 'auto' }}>
+                <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'> <Button shape="round" style={{ display: 'flex', alignItems: 'center', color: '#fff', backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ fontSize: '28px', color: '#fff' }} /> Find us on Alibaba</Button></Link>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} theme='dark' />
                 </Flex>
             </Content>
 
             <Content style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
-                <Flex justify='space-between' align='center' style={{ maxWidth: '1440px', margin: 'auto' }}>
+                <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Flex align='center'>
                         <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
                     </Flex>
