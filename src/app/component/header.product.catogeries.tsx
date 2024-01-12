@@ -2,16 +2,18 @@
 import { Carousel, Col, Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Image from "next/image";
-import { title } from "process";
+
 
 interface HeaderProductCatogeriesProps {
     hpcbackground: string;
     hpctitle?: string;
     hpcsubtitle: string;
-    data: any;
+    data: DataItem[];
 }
 
-
+interface DataItem {
+    title: string;
+}
 
 
 const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, data }: HeaderProductCatogeriesProps) => {
@@ -31,7 +33,7 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
             </Content>
             <Content style={{ height: '190px', width: '1200%', maxWidth: '1200px', background: 'white', borderRadius: '8px', position: 'absolute', top: '180px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                 <Row style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
-                    {data.map((item: string, index: number) => {
+                    {data.map((item, index) => {
 
                         return ((
                             <Col key={index} style={{ position: 'relative', width: `${width}%` }}>
