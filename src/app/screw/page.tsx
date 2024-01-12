@@ -42,7 +42,7 @@ const ScrewPage = async () => {
         hpctitle='Ground Anchor'
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
-        hpcbackground='img/renewable-energy.jpg'
+        hpcbackground='img/screw-header.jpg'
       />
 
 

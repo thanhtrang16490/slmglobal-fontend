@@ -33,7 +33,7 @@ const GrassStrawPage = async () => {
         hpctitle='Grassgreen Straw Reed'
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
-        hpcbackground='img/renewable-energy.jpg'
+        hpcbackground='img/straw-header.jpg'
       />
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h1 >Recommend products</h1>

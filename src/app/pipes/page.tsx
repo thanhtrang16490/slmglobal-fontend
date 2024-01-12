@@ -39,7 +39,7 @@ const PipesPage = async () => {
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
 
-        hpcbackground='img/renewable-energy.jpg'
+        hpcbackground='img/pipe-header.jpg'
       />
 
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

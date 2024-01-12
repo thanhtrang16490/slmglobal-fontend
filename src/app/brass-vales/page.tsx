@@ -32,10 +32,10 @@ const BrassValesPage = async () => {
   return (
     <>
       <HeaderProductCatogeries
-        hpctitle='Brass Cales & Tapes'
+        hpctitle='Brass Vales & Tapes'
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
-        hpcbackground='img/renewable-energy.jpg' />
+        hpcbackground='img/vales-header.jpg' />
 
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>

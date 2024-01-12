@@ -49,7 +49,7 @@ const PalmPlatePage = async () => {
         hpctitle='Anam Cau - Palm Plate'
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
-        hpcbackground='img/renewable-energy.jpg'
+        hpcbackground='img/anam-header.jpg'
       />
 
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>

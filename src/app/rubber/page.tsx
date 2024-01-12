@@ -50,7 +50,7 @@ const RubberPage = async () => {
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
 
-        hpcbackground='img/renewable-energy.jpg'
+        hpcbackground='img/rubber-header.jpg'
       />
 
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
