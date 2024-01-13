@@ -22,7 +22,7 @@ const SlideModule = ({ backgroundImage, headerTitle, id }: SlideModuleProps) => 
     return (
         <Content>
             <Content id={id} style={{ position: 'relative', width: '100%', height: '100vh' }}>
-                <Title style={{ position: "absolute", left: '50%', textAlign: 'center', paddingTop: '300px', color: 'white', translate: '-50% -50px', zIndex: 2, }}                >
+                <Title style={{ fontSize: '55px', position: "absolute", left: '50%', textAlign: 'center', paddingTop: '300px', color: 'white', translate: '-50% -80px', zIndex: 2, }}                >
                     {headerTitle}
                 </Title>
                 <Image
@@ -42,7 +42,7 @@ const SlideModule = ({ backgroundImage, headerTitle, id }: SlideModuleProps) => 
                     zIndex: 1,
                 }}>
                 </Content>
-                <Content style={{ position: 'absolute', bottom: '40px', left: '50%', translate: '-50% -50px', zIndex: 2, }}>
+                <Content style={{ position: 'absolute', bottom: '20px', left: '50%', translate: '-50% -50px', zIndex: 2, }}>
                     <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
                         <Link href={`/${id}`}><Button block style={{ width: '246px', margin: '10px', height: '40px' }}>Explore Inventory</Button></Link>
                         <Link href={'/contact'}><Button ghost style={{ width: '246px', margin: '10px', height: '40px' }}>Get free quote</Button></Link>

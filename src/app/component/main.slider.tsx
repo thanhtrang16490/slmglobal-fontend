@@ -13,42 +13,46 @@ import SlideModule from "./slide.module";
 const MainSlider = () => {
     const NextArrow = (props: any) => {
         return (
-            <Button variant="outlined"
-                onClick={props.onClick}
-                sx={{
-                    position: "absolute",
-                    bottom: '30px',
-                    right: "50%",
-                    zIndex: 2,
-                    minWidth: 50,
-                    width: 75,
-                    color: "white",
-                    backgroundColor: '#ff6600',
-                    transform: "translateX(50%)"
-                }}
-            >
-                <KeyboardArrowDownOutlinedIcon />
-            </Button>
+            <>
+                {/* <Button variant="outlined"
+                    onClick={props.onClick}
+                    sx={{
+                        position: "absolute",
+                        bottom: '30px',
+                        right: "50%",
+                        zIndex: 2,
+                        minWidth: 50,
+                        width: 75,
+                        color: "white",
+                        backgroundColor: '#17274f90',
+                        transform: "translateX(50%)"
+                    }}
+                >
+                    <KeyboardArrowDownOutlinedIcon />
+                </Button> */}
+            </>
         )
     }
 
     const PrevArrow = (props: any) => {
         return (
-            <Button variant="outlined" onClick={props.onClick}
-                sx={{
-                    position: "absolute",
-                    left: "50%",
-                    zIndex: 2,
-                    minWidth: 50,
-                    width: 75,
-                    top: "170px",
-                    color: "white",
-                    backgroundColor: '#ff6600',
-                    transform: "translateX(-50%)"
-                }}
-            >
-                <KeyboardArrowUpOutlinedIcon />
-            </Button>
+            <>
+                {/* <Button variant="outlined" onClick={props.onClick}
+                    sx={{
+                        position: "absolute",
+                        left: "50%",
+                        zIndex: 2,
+                        minWidth: 50,
+                        width: 75,
+                        top: "170px",
+                        color: "white",
+                        backgroundColor: '#17274f90',
+                        transform: "translateX(-50%)"
+                    }}
+                >
+                    <KeyboardArrowUpOutlinedIcon />
+                </Button> */}
+            </>
         )
     }
 

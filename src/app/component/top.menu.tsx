@@ -100,7 +100,7 @@ const TopMenuComponent: React.FC = () => {
     };
 
     return (
-        <div style={{ position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
+        <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1000' }}>
             <Content style={{ backgroundColor: '#17274f' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'> <Button shape="round" style={{ display: 'flex', alignItems: 'center', color: '#fff', backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ fontSize: '28px', color: '#fff' }} /> Find us on Alibaba</Button></Link>
@@ -108,13 +108,13 @@ const TopMenuComponent: React.FC = () => {
                 </Flex>
             </Content>
 
-            <Content style={{ padding: '10px 0', backgroundColor: '#ffffff' }}>
+            <Content style={{ padding: '10px 0', backgroundColor: '#ffffff00' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Flex align='center'>
                         <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
-                        style={{ color: '#17274f', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
+                        style={{ backgroundColor: '#ffffff00', color: '#fff', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
                     <Flex justify='space-between' gap="middle" align='center'>
                         <Link target='_blank' rel='noopener noreferrer' href='https://indd.adobe.com/view/156a9b15-33b4-46f5-a713-2c71fc8fafbd'> <Button danger shape="round" ><FilePdfOutlined />Company Profile</Button></Link>
                     </Flex>
