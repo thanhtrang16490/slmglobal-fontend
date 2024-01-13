@@ -12,7 +12,7 @@ const ContactPage = () => {
     return (
         <>
             <HeaderMain
-                hpctitle='Vietnam Economy News'
+                hpctitle=''
                 hpcsubtitle=' '
                 hpcbackground='/img/shipping-and-importing-header.jpg'
             />

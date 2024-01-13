@@ -1,3 +1,4 @@
+import HeaderMain from "@/app/component/header.main";
 import ProductDetail from "@/app/component/product.detail";
 
 type Params = {
@@ -21,7 +22,14 @@ const ProductPage = async ({ params }: { params: Params }) => {
 
 
     return (
-        <ProductDetail product={product} />
+        <>
+            <HeaderMain
+                hpctitle='SLM Global - Best Quality Products From Vietnam'
+                hpcsubtitle=' '
+                hpcbackground='/img/shipping-and-importing-header.jpg'
+            />
+            <ProductDetail product={product} />
+        </>
     );
 }
 

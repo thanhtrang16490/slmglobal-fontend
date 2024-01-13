@@ -9,7 +9,7 @@ const AboutUsPage: React.FC = () => {
     return (
         <>
             <HeaderMain
-                hpctitle='Vietnam Economy News'
+                hpctitle='About Us'
                 hpcsubtitle=' '
                 hpcbackground='/img/shipping-and-importing-header.jpg'
             />
