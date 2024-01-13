@@ -1,4 +1,5 @@
 
+import HeaderMain from '@/app/component/header.main';
 import PostContent from '@/app/component/post.content';
 
 type Params = {
@@ -18,7 +19,16 @@ const SingleBlogPage = async ({ params }: { params: Params }) => {
   const post = await getData(slug);
 
   return (
-    <PostContent post={post} />
+    <>
+      <HeaderMain
+        hpctitle='Vietnam Economy News'
+        hpcsubtitle=' '
+        hpcbackground='/img/shipping-and-importing-header.jpg'
+
+      />
+      <PostContent post={post} />
+    </>
+
   );
 }
 

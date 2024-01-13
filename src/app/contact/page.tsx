@@ -6,12 +6,18 @@ import Link from 'next/link';
 import { StarFilled, PhoneOutlined, MailOutlined, EnvironmentOutlined, HomeOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 import ProductFooterModule from '../component/product.footer';
+import HeaderMain from '../component/header.main';
 
 const ContactPage = () => {
     return (
         <>
+            <HeaderMain
+                hpctitle='Vietnam Economy News'
+                hpcsubtitle=' '
+                hpcbackground='/img/shipping-and-importing-header.jpg'
+            />
             <Layout >
-                <Row gutter={30} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', paddingTop: '20px' }}>
+                <Row gutter={30} style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', }}>
                     <Content style={{ maxWidth: '1440px', width: '100%', margin: '0 auto', padding: '0px 0', display: 'flex', paddingTop: '20px' }}>
                         <Col xs={24} sm={24} md={16} >
                             <Content style={{ display: 'flex', justifyContent: 'flex-start' }}>
