@@ -1,0 +1,18 @@
+import { NextResponse, NextRequest } from "next/server";
+
+export async function GET(request: NextRequest, response: NextResponse) {
+
+    const url = new URL(request.url);
+    // console.log(url);
+    const current = url.searchParams.get('current');
+    const pageSize = url.searchParams.get('pagesize');
+    const res = await fetch(`https://api.slmglobal.vn/api/blogs?populate=FeaturedImage&pagination[page]=${current}&pagination[pageSize]=${pageSize}`);
+
+    if (!res.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await res.json();
+    // console.log(data);
+    return NextResponse.json(data);
+}
