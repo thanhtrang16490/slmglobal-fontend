@@ -1,6 +1,7 @@
 import HeaderMain from "../component/header.main";
 import PostCard from "../component/post.card";
 import { Row, Col, Layout } from 'antd';
+import ProductFooterModule from "../component/product.footer";
 type Post = {
   id: number;
 
@@ -38,6 +39,7 @@ const BlogPage = async () => {
           ))}
         </Row>
       </Layout>
+      <ProductFooterModule />
     </>
   );
 }

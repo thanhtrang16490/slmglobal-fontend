@@ -2,6 +2,7 @@
 import { Col, Divider, Layout, Row, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import HeaderMain from "../component/header.main";
+import ProductFooterModule from "../component/product.footer";
 
 
 const AboutUsPage: React.FC = () => {
@@ -119,6 +120,7 @@ const AboutUsPage: React.FC = () => {
                     </Row>
                 </Content>
             </Layout >
+            <ProductFooterModule />
         </>
     )
 };

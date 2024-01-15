@@ -1,6 +1,7 @@
 
 import HeaderMain from '@/app/component/header.main';
 import PostContent from '@/app/component/post.content';
+import ProductFooterModule from '@/app/component/product.footer';
 
 type Params = {
   slug: string;
@@ -27,6 +28,7 @@ const SingleBlogPage = async ({ params }: { params: Params }) => {
 
       />
       <PostContent post={post} />
+      <ProductFooterModule />
     </>
 
   );
