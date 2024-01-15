@@ -16,11 +16,27 @@ const AboutUsPage: React.FC = () => {
             <Layout >
                 <Content style={{ background: '#17274f' }}>
                     <Content style={{ margin: 'auto', width: '100%', maxWidth: '1440px' }} >
-                        <div style={{ margin: '0 auto', display: 'flex', alignItems: 'center', minHeight: '500px', maxWidth: '800px' }}>
-                            <Typography.Title style={{ color: ' white', fontSize: '28px', fontWeight: 200, padding: '0 30px', textAlign: 'center', lineHeight: '1.6' }}>
-                                “ Our mission at SLM Investment ., JSC is to build a brighter future for the world by promoting clean and sustainable energy use. We are committed to bringing innovative and efficient solar solutions to both households and businesses in Vietnam.”
-                            </Typography.Title>
-                        </div>
+                        <Row gutter={16} style={{ display: 'flex', alignItems: 'center' }}>
+                            <Col span={12}>
+                                <div style={{ margin: '0 auto', display: 'flex', alignItems: 'center', minHeight: '500px', maxWidth: '800px' }}>
+                                    <Typography.Title style={{ color: ' white', fontSize: '28px', fontWeight: 200, padding: '0 30px', textAlign: 'left', lineHeight: '1.6' }}>
+                                        “ Our mission at SLM Investment ., JSC is to build a brighter future for the world by promoting clean and sustainable energy use. We are committed to bringing innovative and efficient solar solutions to both households and businesses in Vietnam.”
+                                    </Typography.Title>
+                                </div>
+                            </Col>
+                            <Col span={12}>
+                                <div>
+                                    <iframe
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/xMtAS9VO0cA?si=FGNFaVpqssBpJbaS"
+                                        title="SLM Global Introduction"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    ></iframe>
+                                </div>
+                            </Col>
+                        </Row>
                     </Content>
                 </Content>
                 <Content>
