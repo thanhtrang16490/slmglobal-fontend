@@ -48,7 +48,7 @@ const RubberPage = () => {
 
   const [meta, setMeta] = useState({
     current: 1,
-    pageSize: 12,
+    pageSize: 20,
     total: 0,
     pages: 0,
   });
