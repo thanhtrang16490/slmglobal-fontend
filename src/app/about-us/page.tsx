@@ -13,7 +13,7 @@ const AboutUsPage: React.FC = () => {
                 hpcsubtitle=' '
                 hpcbackground='/img/shipping-and-importing-header.jpg'
             />
-            <Layout >
+            <Layout style={{ marginTop: '-50px' }}>
                 <Content style={{ background: '#17274f' }}>
                     <Content style={{ margin: 'auto', width: '100%', maxWidth: '1440px' }} >
                         <Row gutter={16} style={{ display: 'flex', alignItems: 'center' }}>
