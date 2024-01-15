@@ -24,7 +24,7 @@ type ProductsData = {
 
 
 
-const catogeries = [
+const catogeries: any = [
   {
     title: 'GROUND SOLUTION',
   },
@@ -79,9 +79,7 @@ const AluminumPage = () => {
 
 
 
-  if (!products) {
-    return <div>Loading...</div>;
-  }
+
 
   const handleOnChange = async (page: number, pageSize: number) => {
     console.log(page, pageSize);

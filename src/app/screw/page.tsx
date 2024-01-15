@@ -24,7 +24,7 @@ type ProductsData = {
 
 
 
-const catogeries = [
+const catogeries: any = [
   {
     title: 'Helical ground anchor',
 
@@ -75,9 +75,7 @@ const ScrewPage = () => {
 
 
 
-  if (!products) {
-    return <div>Loading...</div>;
-  }
+
 
   const handleOnChange = async (page: number, pageSize: number) => {
     console.log(page, pageSize);

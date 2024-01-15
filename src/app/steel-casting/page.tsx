@@ -24,7 +24,7 @@ type ProductsData = {
 
 
 
-const catogeries = [
+const catogeries: any = [
   {
     title: 'iron casting',
 
@@ -78,9 +78,7 @@ const SteelCasting = () => {
 
 
 
-  if (!products) {
-    return <div>Loading...</div>;
-  }
+
 
   const handleOnChange = async (page: number, pageSize: number) => {
     console.log(page, pageSize);

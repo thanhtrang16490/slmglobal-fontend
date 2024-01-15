@@ -65,10 +65,6 @@ const BrassValesPage = () => {
 
 
 
-  if (!products) {
-    return <div>Loading...</div>;
-  }
-
   const handleOnChange = async (page: number, pageSize: number) => {
     console.log(page, pageSize);
     const res = await fetch(`/brass-vales/api?current=${page}&pagesize=${pageSize}`);

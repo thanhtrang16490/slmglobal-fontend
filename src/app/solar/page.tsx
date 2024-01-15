@@ -24,7 +24,7 @@ type ProductsData = {
 
 
 
-const catogeries = [
+const catogeries: any = [
   {
     title: 'SINGLE PHASE ON GRID SYSTEM',
 
@@ -84,9 +84,7 @@ const SolarPage = () => {
 
 
 
-  if (!products) {
-    return <div>Loading...</div>;
-  }
+
 
   const handleOnChange = async (page: number, pageSize: number) => {
     console.log(page, pageSize);
