@@ -3,7 +3,7 @@ import { NextResponse, NextRequest } from "next/server";
 export async function GET(request: NextRequest, response: NextResponse) {
 
     const url = new URL(request.url);
-    // console.log(url);
+
     const current = url.searchParams.get('current');
     const pageSize = url.searchParams.get('pagesize');
     const res = await fetch(`${process.env.BACKEND_URL}blogs?populate=FeaturedImage&pagination[page]=${current}&pagination[pageSize]=${pageSize}`);
@@ -13,6 +13,6 @@ export async function GET(request: NextRequest, response: NextResponse) {
     }
 
     const data = await res.json();
-    // console.log(data);
+
     return NextResponse.json(data);
 }

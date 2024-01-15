@@ -82,7 +82,7 @@ const WoodPage = () => {
       pages: data.meta.pagination.pageCount,
       total: data.meta.pagination.total,
     })
-    console.log(data);
+
   }
 
 
@@ -90,7 +90,7 @@ const WoodPage = () => {
 
 
   const handleOnChange = async (page: number, pageSize: number) => {
-    console.log(page, pageSize);
+
     const res = await fetch(`/wood/api?current=${page}&pagesize=${pageSize}`);
     if (!res.ok) {
       throw new Error(res.statusText);

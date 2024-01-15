@@ -70,7 +70,7 @@ const PipesPage = () => {
       pages: data.meta.pagination.pageCount,
       total: data.meta.pagination.total,
     })
-    console.log(data);
+
   }
 
 
@@ -78,7 +78,7 @@ const PipesPage = () => {
 
 
   const handleOnChange = async (page: number, pageSize: number) => {
-    console.log(page, pageSize);
+
     const res = await fetch(`/pipes/api?current=${page}&pagesize=${pageSize}`);
     if (!res.ok) {
       throw new Error(res.statusText);

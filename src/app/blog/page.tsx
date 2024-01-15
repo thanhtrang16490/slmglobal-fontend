@@ -63,7 +63,7 @@ const BlogPage = () => {
   }
 
   const handleOnChange = async (page: number, pageSize: number) => {
-    // console.log(page, pageSize);
+
     const res = await fetch(`/blog/api?current=${page}&pagesize=${pageSize}`);
     if (!res.ok) {
       throw new Error(res.statusText);

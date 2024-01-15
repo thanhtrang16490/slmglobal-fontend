@@ -73,7 +73,7 @@ const PalmPlatePage = () => {
       pages: data.meta.pagination.pageCount,
       total: data.meta.pagination.total,
     })
-    console.log(data);
+
   }
 
 
@@ -81,7 +81,7 @@ const PalmPlatePage = () => {
 
 
   const handleOnChange = async (page: number, pageSize: number) => {
-    console.log(page, pageSize);
+
     const res = await fetch(`/palm-plate/api?current=${page}&pagesize=${pageSize}`);
     if (!res.ok) {
       throw new Error(res.statusText);
