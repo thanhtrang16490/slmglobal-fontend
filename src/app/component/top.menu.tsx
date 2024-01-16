@@ -101,17 +101,17 @@ const TopMenuComponent: React.FC = () => {
 
     return (
         <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1000' }}>
-            <Content style={{ backgroundColor: '#17274f' }}>
+            <Content style={{padding: '0 36px', backgroundColor: '#17274f' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'> <Button shape="round" style={{ display: 'flex', alignItems: 'center', color: '#fff', backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ fontSize: '28px', color: '#fff' }} /> Find us on Alibaba</Button></Link>
-                    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} theme='dark' />
+                    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{color: '#fff', flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} />
                 </Flex>
             </Content>
 
-            <Content style={{ padding: '10px 0', backgroundColor: '#ffffff00' }}>
+            <Content style={{ padding: '10px 30px', backgroundColor: '#ffffff00' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Flex align='center'>
-                        <Link href='/'><Image src="/img/slm-global-logo.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
+                        <Link href='/'><Image src="/img/slm-global-light.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
                         style={{ backgroundColor: '#ffffff00', color: '#fff', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
