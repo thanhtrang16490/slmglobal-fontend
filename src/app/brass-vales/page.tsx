@@ -22,6 +22,33 @@ type ProductsData = {
 };
 
 
+interface attributes {
+  url: string;
+}
+
+interface data {
+  attributes: attributes;
+}
+
+interface header_image {
+  data: data;
+}
+
+interface Attributes {
+  name_cat: string;
+  header_title: string;
+  header_subtitle: string;
+  header_img: header_image;
+  header_name: string;
+}
+
+interface DataItem {
+  id: number;
+  attributes: Attributes;
+}interface ResponseData {
+  data: DataItem[];
+
+}
 
 
 const catogeries: any = [
@@ -50,6 +77,7 @@ const catogeries: any = [
 
 const BrassValesPage = () => {
   const [products, setProducts] = useState<ProductsData | null>(null);
+  const [productscat, setProductscat] = useState<ResponseData | null>(null);
 
 
   const [meta, setMeta] = useState({
@@ -64,6 +92,23 @@ const BrassValesPage = () => {
     getData();
   }, []);
 
+  const getDataCat = async () => {
+
+    const res = await fetch(`/brass-vales/api/category`);
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const data = await res.json();
+    setProductscat(data);
+
+
+  }
+
+  useEffect(() => {
+
+
+    getDataCat();
+  }, []);
 
   const getData = async () => {
 
@@ -106,10 +151,11 @@ const BrassValesPage = () => {
   return (
     <>
       <HeaderProductCatogeries
-        hpctitle='Brass Vales & Tapes'
-        hpcsubtitle='Discover new and trending products'
+        hpctitle={productscat?.data[0].attributes?.header_title}
+        hpcsubtitle={productscat?.data[0].attributes?.header_subtitle}
         data={catogeries}
-        hpcbackground='img/vales-header.jpg' />
+        hpcbackground={`${process.env.NEXT_PUBLIC_BACKEND_URL}/${productscat?.data[0].attributes?.header_img?.data?.attributes?.url}`}
+      />
 
       <Layout style={{ maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <h2 style={{ color: '#17274f', fontSize: '28px' }}>Recommend products</h2>
