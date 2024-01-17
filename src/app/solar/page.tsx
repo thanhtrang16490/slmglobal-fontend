@@ -27,21 +27,23 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'SINGLE PHASE ON GRID SYSTEM',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'Single phase hybrid system',
-
+    link: '/img/hybrid-1-phase.webp'
   },
   {
     title: 'THREE PHASES ON GRID SYSTEM ',
-
+    link: '/img/off-grid-3-phase.webp'
   },
   {
-    title: 'THREE phases hybrid system'
+    title: 'THREE phases hybrid system',
+    link: '/img/hybrid-3-phase.webp'
   },
   {
-    title: 'Accressories'
+    title: 'Accressories',
+    link: '/img/solar-accessories.webp'
   },
 ]
 
@@ -111,7 +113,6 @@ const SolarPage = () => {
         hpctitle='Renewable Energy'
         hpcsubtitle='Discover new and trending products'
         data={catogeries}
-
         hpcbackground='img/renewable-energy.jpg'
       />
 

@@ -27,24 +27,30 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'Phenolic plywood',
+    link: '/img/off-grid-1-phase.webp'
 
   },
   {
     title: 'BIRCH plywood',
+    link: '/img/off-grid-1-phase.webp'
 
   },
   {
     title: 'Melamine plywood',
+    link: '/img/off-grid-1-phase.webp'
 
   },
   {
-    title: 'Laminate plywood'
+    title: 'Laminate plywood',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
-    title: 'PVC plywood'
+    title: 'PVC plywood',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
-    title: 'Furniture'
+    title: 'Furniture',
+    link: '/img/off-grid-1-phase.webp'
   },
 ]
 

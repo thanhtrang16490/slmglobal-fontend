@@ -27,15 +27,19 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'Extruded rubber',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'COMPRESSION RUBBER',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'TECHNICAL RUBBER',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
-    title: 'TAPE, EVA, FOARM, FILM'
+    title: 'TAPE, EVA, FOARM, FILM',
+    link: '/img/off-grid-1-phase.webp'
   },
 ]
 

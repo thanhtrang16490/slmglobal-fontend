@@ -27,14 +27,15 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'PALM LEAF PLATES',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'PALM LEAF BOWLS',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'PALM LEAF TRAYS',
+    link: '/img/off-grid-1-phase.webp'
   },
 
 ]

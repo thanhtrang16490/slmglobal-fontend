@@ -27,12 +27,15 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'HDPE pipes',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'PPR pipes',
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'uPVC pipes',
+    link: '/img/off-grid-1-phase.webp'
   },
 ]
 

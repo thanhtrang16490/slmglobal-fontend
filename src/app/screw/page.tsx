@@ -21,17 +21,43 @@ type ProductsData = {
   meta: Meta;
 };
 
+interface attributes {
+  url: string;
+}
 
+interface data {
+  attributes: attributes;
+}
+
+interface header_image {
+  data: data;
+}
+
+interface Attributes {
+  name_cat: string;
+  header_title: string;
+  header_subtitle: string;
+  header_img: header_image;
+  header_name: string;
+}
+
+interface DataItem {
+  id: number;
+  attributes: Attributes;
+}interface ResponseData {
+  data: DataItem[];
+
+}
 
 
 const catogeries: any = [
   {
     title: 'Helical ground anchor',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'Thread ground anchor',
-
+    link: '/img/off-grid-1-phase.webp'
   },
 
 ]
@@ -41,8 +67,7 @@ const catogeries: any = [
 
 const ScrewPage = () => {
   const [products, setProducts] = useState<ProductsData | null>(null);
-
-
+  const [productscat, setProductscat] = useState<ResponseData | null>(null);
   const [meta, setMeta] = useState({
     current: 1,
     pageSize: 20,
@@ -50,15 +75,36 @@ const ScrewPage = () => {
     pages: 0,
   });
 
+
+
   useEffect(() => {
 
     getData();
+
   }, []);
 
+  const getDataCat = async () => {
 
+    const res = await fetch(`/screw/api/category`);
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const data = await res.json();
+    setProductscat(data);
+
+
+  }
+
+  useEffect(() => {
+
+
+    getDataCat();
+  }, []);
+
+  console.log(productscat);
   const getData = async () => {
 
-    const res = await fetch(`/screw/api?current=${meta.current}&pagesize=${meta.pageSize}`);
+    const res = await fetch(`/screw/api?category=${productscat?.data[0].attributes?.header_name}&current=${meta.current}&pagesize=${meta.pageSize}`);
     if (!res.ok) {
       throw new Error(res.statusText);
     }
@@ -72,6 +118,8 @@ const ScrewPage = () => {
     })
 
   }
+
+
 
 
 
@@ -99,10 +147,10 @@ const ScrewPage = () => {
   return (
     <>
       <HeaderProductCatogeries
-        hpctitle='Ground Anchor'
-        hpcsubtitle='Discover new and trending products'
+        hpctitle={productscat?.data[0].attributes?.header_title}
+        hpcsubtitle={productscat?.data[0].attributes?.header_subtitle}
         data={catogeries}
-        hpcbackground='img/screw-header.jpg'
+        hpcbackground={`${process.env.NEXT_PUBLIC_BACKEND_URL}/${productscat?.data[0].attributes?.header_img?.data?.attributes?.url}`}
       />
 
 

@@ -3,14 +3,15 @@ import { Carousel, Col, Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Image from "next/image";
 interface HeaderProductCatogeriesProps {
-    hpcbackground: string;
+    hpcbackground?: string;
     hpctitle?: string;
-    hpcsubtitle: string;
+    hpcsubtitle?: string;
     data: DataItem[];
 }
 
 interface DataItem {
     title: string;
+    link: string;
 }
 
 const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, data }: HeaderProductCatogeriesProps) => {
@@ -33,6 +34,7 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
                             return ((
                                 <Col key={index} style={{ position: 'relative', width: `${width}%` }}>
                                     <div style={{ height: '120px', width: '120px', maxWidth: '1440px', background: '#dfdfdf', borderRadius: '50%', position: 'absolute', top: '70px', left: '50%', translate: '-50% -50px' }}>
+                                        <Image src={item.link} width={120} height={120} alt='image' style={{ borderRadius: '50%', border: 'solid 5px #ccc' }} />
                                     </div>
                                     <div style={{ position: 'absolute', top: '200px', left: '50%', translate: '-50% -70px' }}>
                                         <h5 style={{ textTransform: "uppercase", textAlign: 'center' }}>{item.title}</h5>

@@ -27,15 +27,15 @@ type ProductsData = {
 const catogeries: any = [
   {
     title: 'iron casting',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'Steel casting',
-
+    link: '/img/off-grid-1-phase.webp'
   },
   {
     title: 'Stainless steel casting',
-
+    link: '/img/off-grid-1-phase.webp'
   }
 ]
 
