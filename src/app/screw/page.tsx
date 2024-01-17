@@ -101,7 +101,7 @@ const ScrewPage = () => {
     getDataCat();
   }, []);
 
-  console.log(productscat);
+
   const getData = async () => {
 
     const res = await fetch(`/screw/api?category=${productscat?.data[0].attributes?.header_name}&current=${meta.current}&pagesize=${meta.pageSize}`);
@@ -118,11 +118,6 @@ const ScrewPage = () => {
     })
 
   }
-
-
-
-
-
 
 
   const handleOnChange = async (page: number, pageSize: number) => {
