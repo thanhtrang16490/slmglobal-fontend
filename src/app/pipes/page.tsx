@@ -54,15 +54,15 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'HDPE pipes',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/hdpe-pipes.webp'
   },
   {
     title: 'PPR pipes',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/ppr-pipes.webp'
   },
   {
     title: 'uPVC pipes',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/upvc-pipes.webp'
   },
 ]
 

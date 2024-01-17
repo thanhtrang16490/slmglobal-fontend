@@ -54,15 +54,15 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'iron casting',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/cast-iron.webp'
   },
   {
     title: 'Steel casting',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/steel-casting.webp'
   },
   {
     title: 'Stainless steel casting',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/stainless-steel-casting.webp'
   }
 ]
 

@@ -53,23 +53,23 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'GROUND SOLUTION',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/solutions-ground.webp'
   },
   {
     title: 'CAR PARK SOLUTION',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/solutions-garage.webp'
   },
   {
     title: 'METAL ROOF SOLUTION',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/solutions-roofing.webp'
   },
   {
     title: 'FLAT ROOF SOLUTION ',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/solutions-roofs.webp'
   },
   {
     title: 'SHAPED ALUMINUM',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/shaped-aluminum.webp'
   },
 ]
 

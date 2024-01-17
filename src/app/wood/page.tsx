@@ -56,32 +56,39 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'Phenolic plywood',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/phenolic-plywood.webp'
 
   },
   {
     title: 'BIRCH plywood',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/birch-plywood.webp'
 
   },
   {
     title: 'Melamine plywood',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/melamine-plywood.webp'
 
   },
   {
     title: 'Laminate plywood',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/laminate-plywood.webp'
   },
+
+  {
+    title: 'Veneer Plywood',
+    link: '/img/veneer-plywood.webp'
+  },
+
   {
     title: 'PVC plywood',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/pvc-plywood.webp'
   },
   {
-    title: 'Furniture',
-    link: '/img/off-grid-1-phase.webp'
+    title: 'RTA Furniture',
+    link: '/img/rta-furniture.webp'
   },
 ]
+
 
 
 

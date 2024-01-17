@@ -54,15 +54,15 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'PALM LEAF PLATES',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/plates.png'
   },
   {
     title: 'PALM LEAF BOWLS',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/bowls.png'
   },
   {
     title: 'PALM LEAF TRAYS',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/tray.png'
   },
 
 ]

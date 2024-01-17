@@ -54,20 +54,27 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'Extruded rubber',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/extruded-rubber.webp'
   },
   {
     title: 'COMPRESSION RUBBER',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/compression-rubber.webp'
   },
   {
     title: 'TECHNICAL RUBBER',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/technical-rubber.webp'
   },
   {
     title: 'TAPE, EVA, FOARM, FILM',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/tape-eva-foarm-film.webp'
   },
+
+  {
+    title: 'silicone',
+    link: '/img/silicone.webp'
+  },
+
+
 ]
 
 

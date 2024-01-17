@@ -53,11 +53,11 @@ interface DataItem {
 const catogeries: any = [
   {
     title: 'Helical ground anchor',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/helical-screw.webp'
   },
   {
     title: 'Thread ground anchor',
-    link: '/img/off-grid-1-phase.webp'
+    link: '/img/thread-screw.webp'
   },
 
 ]
