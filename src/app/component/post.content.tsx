@@ -51,9 +51,8 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                 <Sider breakpoint="lg" collapsedWidth="0" width="400px"
                     style={{ lineHeight: '120px', color: '#fff', background: 'none', }}>
                     <div
-                        style={{ background: 'white', margin: '50px 20px 0 0', borderRadius: '8px' }}>
-                        <Card title={<Typography.Title level={4}>News Feature</Typography.Title>}>
-                        </Card>
+                        style={{position:'sticky',top:'20px', display: 'flex', justifyContent: 'center', padding: '20px' , background: 'white', margin: '50px 20px 0 0', borderRadius: '8px' }}>
+                    <Image src="/img/furniture-banner-1.png" alt="ads" width="360" height="640" />
                     </div>
                 </Sider>
             </Content>

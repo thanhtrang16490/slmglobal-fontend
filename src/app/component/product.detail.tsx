@@ -1,9 +1,12 @@
 'use client'
 
-import { Button, Card, Col, Divider, Row, Typography } from 'antd';
+import { Button, Card, Carousel, Col, Divider, Layout, Row, Typography } from 'antd';
 import Image from 'next/image';
 import Meta from 'antd/es/card/Meta';
 import ProductFooterModule from './product.footer';
+import { Content } from 'antd/es/layout/layout';
+import Sider from 'antd/es/layout/Sider';
+import FormContact from './form.contact';
 
 type ProductDetailProps = {
     product: any;
@@ -12,11 +15,11 @@ type ProductDetailProps = {
 const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
     return (
         <>
-            <div style={{ padding: '50px 20px 20px', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
-                    <Row gutter={3}>
-                        <Col xs={24} sm={24} md={12}>
-                            <Card style={{ marginTop: '20px' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={4}>{product.data.attributes.name}</Typography.Title>}>
+                    <Row gutter={20}>
+                        <Col xs={24} sm={24} md={10}>
+                            <Card  >
                                 <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                                     <Image
                                         style={{ padding: '15px' }}
@@ -36,8 +39,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                 </div>
                             </Card>
                         </Col>
-                        <Col xs={24} sm={24} md={12}>
-                            <Card style={{ marginTop: '20px' }}
+                        <Col xs={24} sm={24} md={14}>
+                            <Card style={{ height: '100%' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={5}>{product.data.attributes.name}</Typography.Title>}
                             >
                                 <Typography.Paragraph >Product Catogery: <Button type="dashed">{product.data.attributes.category}</Button>
                                 </Typography.Paragraph>
@@ -71,24 +74,29 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                             </Card>
                         </Col>
                     </Row>
+                </div>
 
-                    <Row gutter={16} style={{ paddingTop: '50px' }}>
-                        <Col xs={24} sm={24} md={18}>
-                            <Card title='Description'>
-                                <Typography.Paragraph style={{ margin: 0 }}>
-                                    <div
+            </div>
 
-                                        dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
-                                </Typography.Paragraph>
-                                <Typography.Title level={5} >
-                                    Packing & Delivery
-                                    <hr></hr>
-                                </Typography.Title>
+            <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
+                    <Carousel autoplay style={{ borderRadius: '8px', overflow: 'hidden' }}>
+                        <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
+                        <Image src="/img/furniture.jpg" width={1200} height={200} alt='image' />
+                    </Carousel>
+                </div>
+
+            </div>
+
+            <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
+                <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
+                    <Row gutter={20}>
+                        <Col xs={24} sm={24} md={17}>
+                            <Card  >
                                 <Typography.Paragraph style={{ margin: 0 }}>
-                                    Time Shipping: 10-25 days<br />
-                                    Shiping Port: Hai Phong Port<br />
-                                    Packing Detail: 2000 pcs/carton or customized packaging<br />
+                                    <div dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
                                 </Typography.Paragraph>
+
                                 <div style={{ width: '100%', height: '100%', paddingTop: '100%', position: 'relative' }}>
                                     <Image
                                         layout="fill"
@@ -105,13 +113,24 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                         alt={product.data.attributes.name}
                                     />
                                 </div>
-
                             </Card>
                         </Col>
+                        <Col xs={24} sm={24} md={7}>
+                            <div
+                                style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '20px', background: 'white', margin: '0px 20px 0 0', borderRadius: '8px' }}>
+                                <Image src="/img/furniture-banner-1.png" alt="ads" width="360" height="640" />
+                            </div>
+                            <div
+                                style={{ width: '100%', position: 'sticky', top: '20px', display: 'flex', justifyContent: 'center', padding: '20px', background: 'white', margin: '50px 20px 0 0', borderRadius: '8px' }}>
 
+                                <FormContact />
+                            </div>
+                        </Col>
                     </Row>
                 </div>
+
             </div>
+
             <ProductFooterModule />
         </>
     );
