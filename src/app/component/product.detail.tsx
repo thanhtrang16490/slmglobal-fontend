@@ -18,11 +18,11 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
             <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
                     <Row gutter={20}>
-                        <Col xs={24} sm={24} md={10}>
+                        <Col xs={24} sm={12} md={10}>
                             <Card  >
                                 <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>
                                     <Image
-                                        style={{ padding: '15px' }}
+
                                         layout="fill"
                                         objectFit="cover"
                                         src={
@@ -39,7 +39,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                                 </div>
                             </Card>
                         </Col>
-                        <Col xs={24} sm={24} md={14}>
+                        <Col xs={24} sm={12} md={14}>
                             <Card style={{ height: '100%' }} title={<Typography.Title style={{ whiteSpace: 'pre-line' }} level={5}>{product.data.attributes.name}</Typography.Title>}
                             >
                                 <Typography.Paragraph >Product Catogery: <Button type="dashed">{product.data.attributes.category}</Button>
