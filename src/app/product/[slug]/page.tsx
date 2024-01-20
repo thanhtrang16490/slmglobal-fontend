@@ -7,7 +7,7 @@ type Params = {
 
 
 const getData = async (slug: string) => {
-    const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/product/${slug}?populate=*`);
+    const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/product/${slug}?populate=*`, { next: { revalidate: 84400 } });
     if (!res.ok) {
         throw new Error(res.statusText);
     }
