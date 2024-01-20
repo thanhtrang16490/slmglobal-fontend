@@ -6,7 +6,7 @@ export async function GET(request: NextRequest, response: NextResponse) {
 
     const current = url.searchParams.get('current');
     const pageSize = url.searchParams.get('pagesize');
-    const res = await fetch(`${process.env.BACKEND_URL}blogs?populate=FeaturedImage&&sort[0]=id:desc&pagination[page]=${current}&pagination[pageSize]=${pageSize}`, { next: { revalidate: 84400 } });
+    const res = await fetch(`${process.env.BACKEND_URL}blogs?populate=FeaturedImage&&sort[0]=id:desc&pagination[page]=${current}&pagination[pageSize]=${pageSize}`, { next: { revalidate: 86400 } });
 
     if (!res.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
