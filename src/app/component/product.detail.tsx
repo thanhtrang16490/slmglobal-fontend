@@ -7,7 +7,7 @@ import ProductFooterModule from './product.footer';
 import { Content } from 'antd/es/layout/layout';
 import Sider from 'antd/es/layout/Sider';
 import FormContact from './form.contact';
-
+import styles from './styles.module.css';
 type ProductDetailProps = {
     product: any;
 };
@@ -93,8 +93,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                     <Row gutter={20}>
                         <Col xs={24} sm={24} md={17}>
                             <Card  >
-                                <Typography.Paragraph style={{ margin: 0 }}>
-                                    <div dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
+                                <Typography.Paragraph style={{ margin: 0, }}>
+                                    <div className={styles.myClass} dangerouslySetInnerHTML={{ __html: product.data.attributes.description }} />
                                 </Typography.Paragraph>
 
                                 <div style={{ width: '100%', height: '100%', paddingTop: '100%', position: 'relative' }}>
