@@ -18,7 +18,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
         <div style={{ padding: '6px 5px 5px' }}>
             <Card
-                style={{ width: '100%', height: '100%', position: 'relative' }}
+                style={{ width: '100%', height: '100%', position: 'relative', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}
                 cover={
                     <Link href={`/product/${product.attributes.slug}`}>
                         <div style={{ width: '100%', paddingTop: '100%', position: 'relative' }}>

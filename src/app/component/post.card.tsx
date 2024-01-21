@@ -17,7 +17,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
 
         <Content style={{ padding: '6px 5px 5px' }}>
             <Card
-                style={{ width: '100%', height: '100%', position: 'relative' }}
+                style={{ width: '100%', height: '100%', position: 'relative', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}
                 cover={
                     <Link href={`/blog/${post?.attributes.slug}`}>
                         <div style={{ padding: '10px', width: '100%', paddingTop: '66.66%', position: 'relative' }}>
