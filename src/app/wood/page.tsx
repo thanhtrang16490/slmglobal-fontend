@@ -113,7 +113,7 @@ const WoodPage = () => {
 
   const getDataCat = async () => {
 
-    const res = await fetch(`/screw/api/category`);
+    const res = await fetch(`/wood/api/category`);
     if (!res.ok) {
       throw new Error(res.statusText);
     }
