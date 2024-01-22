@@ -19,7 +19,7 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
 
     return (
         <div>
-            <Content style={{ width: '100%', position: 'relative', height: '850px', marginTop: '-20px' }}>
+            <Content style={{ width: '100%', position: 'relative', height: '620px', marginTop: '-20px' }}>
                 <Content style={{ backgroundColor: 'rgba(0,0,0,.3)', width: '100%', height: '500px', textAlign: "center", backgroundImage: `url('${hpcbackground}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', left: '50%', position: 'absolute', translate: '-50% -50px' }}>
                     <div style={{ backgroundImage: 'linear-gradient(to bottom, #17274f, #00000020,  #00000090)', width: '100%', height: '100%', position: 'absolute' }}>
                     </div>
@@ -44,14 +44,14 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
                         })}
                     </Row>
                 </Content>
-                <Content style={{ height: '200px', width: 'calc(100% - 20px)', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '680px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
+                {/* <Content style={{ height: '200px', width: 'calc(100% - 20px)', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '680px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                     <div >
                         <Carousel autoplay style={{ borderRadius: '8px', overflow: 'hidden' }}>
                             <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
                             <Image src="/img/furniture.jpg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
                         </Carousel>
                     </div>
-                </Content>
+                </Content> */}
             </Content>
 
         </div>

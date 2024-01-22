@@ -78,7 +78,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
 
             </div>
 
-            <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
+            {/* <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
                     <Carousel autoplay style={{ borderRadius: '8px', overflow: 'hidden' }}>
                         <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
@@ -86,7 +86,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
                     </Carousel>
                 </div>
 
-            </div>
+            </div> */}
 
             <div style={{ padding: '20px 20px 20px', display: 'flex', justifyContent: 'center' }}>
                 <div style={{ maxWidth: '1440px', width: '100%', height: '100%', position: 'relative' }}>
