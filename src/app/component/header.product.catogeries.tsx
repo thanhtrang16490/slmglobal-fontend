@@ -18,7 +18,7 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
     const width = 100 / data.length;
 
     return (
-        <>
+        <div>
             <Content style={{ width: '100%', position: 'relative', height: '850px', marginTop: '-20px' }}>
                 <Content style={{ backgroundColor: 'rgba(0,0,0,.3)', width: '100%', height: '500px', textAlign: "center", backgroundImage: `url('${hpcbackground}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', left: '50%', position: 'absolute', translate: '-50% -50px' }}>
                     <div style={{ backgroundImage: 'linear-gradient(to bottom, #17274f, #00000020,  #00000090)', width: '100%', height: '100%', position: 'absolute' }}>
@@ -28,7 +28,7 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
                         <h3 style={{ fontSize: '32px', fontWeight: '100' }}>{hpcsubtitle}</h3>
                     </div>
                 </Content>
-                <Content style={{ height: '190px', width: '100%', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '450px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
+                <Content style={{ height: '190px', width: 'calc(100% - 20px)', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '450px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                     <Row style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
                         {data.map((item, index) => {
                             return ((
@@ -44,17 +44,17 @@ const HeaderProductCatogeries = ({ hpcbackground = '', hpctitle, hpcsubtitle, da
                         })}
                     </Row>
                 </Content>
-                <Content style={{ height: '200px', width: '100%', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '680px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
+                <Content style={{ height: '200px', width: 'calc(100% - 20px)', maxWidth: '1440px', background: 'white', borderRadius: '8px', position: 'absolute', top: '680px', left: '50%', translate: '-50% -50px', boxShadow: '0 0 12px 0 rgba(0,0,0,.2)' }}>
                     <div >
                         <Carousel autoplay style={{ borderRadius: '8px', overflow: 'hidden' }}>
                             <Image src="/img/solar-banner-1.jpeg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
-                            <Image src="/img/furniture.jpg" width={1200} height={200} alt='image' />
+                            <Image src="/img/furniture.jpg" width={1200} height={200} alt='image' style={{ objectFit: "cover" }} />
                         </Carousel>
                     </div>
                 </Content>
             </Content>
 
-        </>
+        </div>
     )
 }
 
