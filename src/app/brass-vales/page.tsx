@@ -61,7 +61,7 @@ const catogeries: any = [
     link: '/img/brass-valves.png'
   },
   {
-    title: 'ACCRESSORIES',
+    title: 'Accessories',
     link: '/img/brass-accessories.png'
   },
 ]
