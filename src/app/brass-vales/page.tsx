@@ -53,16 +53,16 @@ interface DataItem {
 
 const catogeries: any = [
   {
-    title: 'Brass valve',
-    link: '/img/brass-vale.webp'
+    title: 'Brass taps',
+    link: '/img/brass-taps.png'
   },
   {
-    title: 'Brass tap',
-    link: '/img/brass-tap.webp'
+    title: 'Brass valves',
+    link: '/img/brass-valves.png'
   },
   {
     title: 'ACCRESSORIES',
-    link: '/img/brass-ACCRESSORIES.webp'
+    link: '/img/brass-accessories.png'
   },
 ]
 
