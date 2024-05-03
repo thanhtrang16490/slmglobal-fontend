@@ -35,18 +35,26 @@ const topMenuItems: MenuProps['items'] = [
 
 const mainMenuItems: MenuProps['items'] = [
 
-
-
     {
         label:
-            <Link href='/solar' >Solar</Link>,
-        key: 'solar',
+            <Link href='/stone' >Natural Stone</Link>,
+        key: 'stone',
     },
     {
         label:
-            <Link href='/screw' >Ground Anchor</Link>,
-        key: 'screw',
+            <Link href='/rubber' >Rubber</Link>,
+        key: 'rubber',
     },
+    // {
+    //     label:
+    //         <Link href='/solar' >Solar</Link>,
+    //     key: 'solar',
+    // },
+    // {
+    //     label:
+    //         <Link href='/screw' >Ground Anchor</Link>,
+    //     key: 'screw',
+    // },
     {
         label:
             <Link href='/aluminum' >Aluminum</Link>,
@@ -57,26 +65,23 @@ const mainMenuItems: MenuProps['items'] = [
             <Link href='/steel-casting' > Steel Casting</Link>,
         key: 'steel-casting',
     },
-    {
-        label:
-            <Link href='/rubber' >Rubber</Link>,
-        key: 'rubber',
-    },
+
     {
         label:
             <Link href='/wood' >Wood</Link>,
         key: 'wood',
     },
-    {
-        label:
-            <Link href='/pipes' >Pipes</Link>,
-        key: 'pipes',
-    },
+    // {
+    //     label:
+    //         <Link href='/pipes' >Pipes</Link>,
+    //     key: 'pipes',
+    // },
     {
         label:
             <Link href='/brass-vales' >Brass Vales</Link>,
         key: 'brass-vales',
     },
+
     {
         label:
             <Link href='/palm-plate' >Palm Plate</Link>,
@@ -101,10 +106,10 @@ const TopMenuComponent: React.FC = () => {
 
     return (
         <div style={{ position: 'absolute', top: '0', width: '100%', zIndex: '1000' }}>
-            <Content style={{padding: '0 36px', backgroundColor: '#17274f' }}>
+            <Content style={{ padding: '0 36px', backgroundColor: '#17274f' }}>
                 <Flex justify='space-between' align='center' style={{ maxWidth: '1920px', margin: 'auto' }}>
                     <Link style={{ color: '#fff' }} target='_blank' rel='noopener noreferrer' href='https://slmglobal.trustpass.alibaba.com/'> <Button shape="round" style={{ display: 'flex', alignItems: 'center', color: '#fff', backgroundColor: '#ff6600', border: 'none' }}><AlibabaOutlined style={{ fontSize: '28px', color: '#fff' }} /> Find us on Alibaba</Button></Link>
-                    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{color: '#fff', flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} />
+                    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={topMenuItems} style={{ color: '#fff', flex: 'auto', maxWidth: '330px', minWidth: 0, background: 'none' }} />
                 </Flex>
             </Content>
 
@@ -114,7 +119,7 @@ const TopMenuComponent: React.FC = () => {
                         <Link href='/'><Image src="/img/slm-global-light.png" alt="Logo" width={73.52} height={52} priority style={{ width: '100%', height: 'auto' }} /></Link>
                     </Flex>
                     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={mainMenuItems}
-                        style={{ backgroundColor: '#ffffff00', color: '#fff', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1000px' }} />
+                        style={{ backgroundColor: '#ffffff00', color: '#fff', justifyContent: 'center', border: 'none', minWidth: 0, flex: "auto", maxWidth: '1200px' }} />
                     <Flex justify='space-between' gap="middle" align='center'>
                         <Link target='_blank' rel='noopener noreferrer' href='https://indd.adobe.com/view/156a9b15-33b4-46f5-a713-2c71fc8fafbd'> <Button danger shape="round" ><FilePdfOutlined />Company Profile</Button></Link>
                     </Flex>
